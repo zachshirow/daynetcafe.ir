@@ -12,6 +12,17 @@ export type Link = {
   label: string
 }
 
+export type Locale = {
+  lang: string;
+  langTag: string[];
+}
+
+
+export const LOCALE: Locale = {
+  lang: "fa", // html lang code. Set this empty and default will be "en"
+  langTag: ["fa-IR"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+}
+
 export const SITE: Site = {
   TITLE: 'کافی نت دی',
   DESCRIPTION:

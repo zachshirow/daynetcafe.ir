@@ -13,25 +13,24 @@ export type Link = {
 }
 
 export const SITE: Site = {
-  TITLE: 'astro-erudite',
+  TITLE: 'کافی نت دی',
   DESCRIPTION:
-    'astro-erudite is a opinionated, no-frills blogging template—built with Astro, Tailwind, and shadcn/ui.',
-  EMAIL: 'jason@enscribe.dev',
-  NUM_POSTS_ON_HOMEPAGE: 2,
-  POSTS_PER_PAGE: 3,
-  SITEURL: 'https://astro-erudite.vercel.app',
+    'کافی نتی به وسعت جهان - کافی نت محله شما.',
+  EMAIL: 'daynetcafe24@gmail.com',
+  NUM_POSTS_ON_HOMEPAGE: 5,
+  POSTS_PER_PAGE: 5,
+  SITEURL: 'https://daynetcafe.ir',
 }
 
 export const NAV_LINKS: Link[] = [
-  { href: '/blog', label: 'blog' },
-  { href: '/authors', label: 'authors' },
-  { href: '/about', label: 'about' },
-  { href: '/tags', label: 'tags' },
+  { href: '/blog', label: 'وبلاگ' },
+  { href: '/services', label: 'خدمات' },
+  { href: '/shop', label: 'فروشگاه' },
 ]
 
 export const SOCIAL_LINKS: Link[] = [
-  { href: 'https://github.com/jktrn', label: 'GitHub' },
-  { href: 'https://twitter.com/enscry', label: 'Twitter' },
-  { href: 'jason@enscribe.dev', label: 'Email' },
+  { href: 'https://github.com/daynetcafe.ir', label: 'GitHub' },
+  { href: 'https://instagram.com', label: 'Instagram' },
+  { href: 'daynetcafe24@gmail.com', label: 'Email' },
   { href: '/rss.xml', label: 'RSS' },
 ]

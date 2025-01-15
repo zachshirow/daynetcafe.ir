@@ -6,51 +6,83 @@ import ProjectCard from '@/components/ProjectCard.astro'
 import { SITE } from '@/consts'
 import Layout from '@/layouts/Layout.astro'
 import { getCollection } from 'astro:content'
+import Authors from '@/components/Authors.astro'
 
 const projects = await getCollection('projects')
+
 ---
 
 <Layout title="About" description={SITE.DESCRIPTION}>
   <Container class="flex flex-col gap-y-6">
-    <Breadcrumbs items={[{ label: 'About', icon: 'lucide:info' }]} />
+    <Breadcrumbs items={[{ label: 'درباره ما', icon: 'lucide:info' }]} />
 
     <section>
       <div class="min-w-full">
-        <div class="prose prose-neutral mb-8 dark:prose-invert">
-          <p class="mb-4">
-            astro-erudite is an opinionated, no-frills static blogging template
-            that prioritizes simplicity and performance, built with <Link
-              href="https://astro.build"
-              class="text-foreground"
-              external
-              underline>Astro</Link
-            >, <Link
-              href="https://tailwindcss.com"
-              class="text-foreground"
-              external
-              underline>Tailwind</Link
-            >, and <Link
-              href="https://ui.shadcn.com"
-              class="text-foreground"
-              external
-              underline>shadcn/ui</Link
-            >. It provides a clean foundation for your content while being
-            extremely easy to customize.
+        <div class="prose prose-neutral mb-8 dark:prose-invert max-w-full">
+          <h1>کافی نت دی</h1>
+          <p class="lead">
+            برای انجام کارهای کافی نتی خودتون می تونید روی ما حساب کنید. آنلاین یا حضوری، کافی نت دی در خدمت شماست. دفتر ما واقع در شهرستان گنبد کاووس استان گلستان می باشد. 
           </p>
-          <p>
-            To learn more about the philosophy behind this template, check out
-            the following blog post: <Link
-              href="/blog/the-state-of-static-blogs"
-              class="text-foreground"
-              underline>The State of Static Blogs in 2024</Link
-            >.
+          <p class="lead">
+            در کافی نت دی ما از پیشرفته ترین و به روز ترین نرم افزارها و روش های انجام پروژه ها برای ارائه خدمات استفاده میکنیم. 
           </p>
-        </div>
+          <p>ابزار های ما:</p>
+          <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 list-none pr-0">
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Astro Js</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Obsidian</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Baserow</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">NocoDB</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Adobe Illustrator</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Adobe Photoshop</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Adobe Premiere Pro</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Microsoft Word</li>
+            <li class="border h-auto max-w-full rounded-xl py-5 text-center">Microsoft Excel</li>
+          </ul>
+          <hr>
+          <h2>تیم ما</h2>
+          <Authors />
+          <hr>
+          <h2>تماس با ما</h2>
+          <div class="mx-auto flex flex-col gap-y-4 rounded-xl border p-4">
+            
+            <div class="flex items-center gap-x-4 py-2">
+              <div class="flex flex-1 items-center gap-x-2 font-medium text-muted-foreground">
+                شماره تماس
+              </div>
+              <div class="flex-1">
+                <a href="tel:+989037371958">09037371958</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 py-2">
+              <div class="flex flex-1 items-center gap-x-2 font-medium text-muted-foreground">
+                ایمیل
+              </div>
+              <div class="flex-1">
+                <a href="mailto:daynetcafe24@gmail.com">daynetcafe24@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 py-2">
+              <div class="flex flex-1 items-center gap-x-2 font-medium text-muted-foreground">
+                آدرس
+              </div>
+              <div class="flex-1">
+                <a href="https://www.google.com/maps/place/%DA%A9%D8%A7%D9%81%DB%8C+%D9%86%D8%AA+%D8%AF%DB%8C%E2%80%AD/@37.274082,55.157691,14z/data=!4m6!3m5!1s0x3f82bf0033d338fd:0x6645a3b1d5380b42!8m2!3d37.2740816!4d55.157691!16s%2Fg%2F11wy1lmky8?hl=en&entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D">استان گلستان، گنبد کاووس، روستای آق قایه، خیابان ابوحنیفه، کوچه 4</a>
+              </div>
+            </div>
 
-        <h2 class="mb-4 text-2xl font-semibold">Example Projects Listing</h2>
+            
+          </div>
+          <h2>کافی نت دی روی نقشه</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12701.042569983185!2d55.1486213!3d37.265246000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f82bf0033d338fd%3A0x6645a3b1d5380b42!2z2qnYp9mB24wg2YbYqiDYr9uM!5e0!3m2!1sen!2s!4v1736915832394!5m2!1sen!2s" class="aspect-video w-full rounded-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        
+        
+
+        <!-- <h2 class="mb-4 text-2xl font-semibold">Example Projects Listing</h2>
         <div class="flex flex-col gap-4">
           {projects.map((project) => <ProjectCard project={project} />)}
-        </div>
+        </div> -->
       </div>
     </section>
   </Container>

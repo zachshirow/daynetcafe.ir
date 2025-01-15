@@ -66,12 +66,19 @@
     font-family: "IBM Plex Sans Arabic", serif;
   }
 
+code, pre {
+  direction: ltr;
+  @apply text-left
+}
+
   html {
     color-scheme: light;
     @apply bg-background text-foreground;
-  
+
+
     &.dark {
       color-scheme: dark;
+      
     }
 
     ::-webkit-scrollbar-corner {

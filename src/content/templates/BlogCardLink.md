@@ -1,0 +1,1 @@
+<BlogCardLink id="" />

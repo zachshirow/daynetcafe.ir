@@ -22,6 +22,8 @@ export async function getStaticPaths({
 
 const { page } = Astro.props
 
+const sortedPosts = page.data;
+
 const postsByYear = page.data.reduce(
   (acc: Record<string, CollectionEntry<'blog'>[]>, post) => {
     const year = post.data.date.getFullYear().toString()
@@ -32,6 +34,7 @@ const postsByYear = page.data.reduce(
 )
 
 const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
+
 ---
 
 <Layout title="Blog" description="Blog">
@@ -43,21 +46,20 @@ const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
       ]}
     />
 
-    <div class="flex min-h-[calc(100vh-18rem)] flex-col gap-y-8">
-      {
-        years.map((year) => (
-          <section class="flex flex-col gap-y-4">
-            <div class="font-semibold">{year}</div>
-            <ul class="not-prose flex flex-col gap-4">
-              {postsByYear[year].map((post) => (
-                <li>
-                  <BlogCard entry={post} />
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))
-      }
+    <div class="flex min-h-[calc(100vh-18rem)] flex-col gap-y-8 ">
+
+      <section class="flex flex-col gap-y-4 prose max-w-full dark:prose-invert">
+      <h1>وبلاگ</h1>
+      <ul class="not-prose flex flex-col gap-4">
+        {
+          sortedPosts.map(post => {
+            return  <li>
+                    <BlogCard entry={post} />
+                  </li>
+          })
+        }
+      </ul>
+      </section>
     </div>
 
     <PaginationComponent

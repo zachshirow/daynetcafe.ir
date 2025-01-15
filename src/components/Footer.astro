@@ -4,28 +4,76 @@ import { Separator } from '@/components/ui/separator'
 import { SOCIAL_LINKS } from '@/consts'
 import Link from './Link.astro'
 import SocialIcons from './SocialIcons.astro'
+import { FOOTER_LINKS, SITE } from '@/consts'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import SiteLogo from './SiteLogo.astro'
+
 ---
 
 <footer class="py-4">
-  <Container>
-    <div
-      class="flex flex-col items-center justify-center gap-y-2 sm:flex-row sm:justify-between"
-    >
-      <div class="flex items-center gap-x-2">
-        <span class="text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} تمام حقوق محفوظ است.
-        </span>
-        <Separator orientation="vertical" className="h-4" />
-        <p class="text-center text-sm text-muted-foreground">
-          توسعه داده شده توسط <Link
-            href="https://github.com/zachshirow"
-            class="text-foreground"
-            external
-            underline>زکریا شیرمحمدلی</Link
-          >!
-        </p>
+  <Container class="prose dark:prose-invert">
+    <Card>
+      
+      <CardContent>
+
+        
+        <div class="flex flex-col md:flex-row justify-between">
+          <div>
+            
+            <SiteLogo />
+
+          </div>
+          <div>
+            <p class="text-center">{SITE.DESCRIPTION}</p>
+          <div class="flex justify-center gap-2 md:gap-4 ">
+            <nav class="items-center gap-4 text-sm sm:gap-6 flex">
+              {
+                FOOTER_LINKS.map((item) => (
+                  <Link
+                    href={item.href}
+                    class="capitalize text-foreground/60 transition-colors hover:text-foreground/80"
+                  >
+                    {item.label}
+                  </Link>
+                ))
+              }
+            </nav>
+          </div>
+          </div>
+        </div>
+        
+        <div
+        class="flex flex-col items-center justify-center gap-y-2 sm:flex-row sm:justify-between"
+      >
+        <div class="flex items-center gap-x-2">
+  
+          <p class="text-center text-sm text-muted-foreground py-2">
+            &copy; {new Date().getFullYear()} تمام حقوق محفوظ است.
+          </p>
+          <Separator orientation="vertical" className="h-4" />
+          <p class="text-center text-sm text-muted-foreground py-2">
+            توسعه داده شده توسط <Link
+              href="https://github.com/zachshirow"
+              class="text-foreground"
+              external
+              underline>زکریا شیرمحمدلی</Link
+            >!
+          </p>
+        </div>
+        <SocialIcons links={SOCIAL_LINKS} className='py-2'/>
+
       </div>
-      <SocialIcons links={SOCIAL_LINKS} />
-    </div>
+
+
+      </CardContent>
+    </Card>
+
+   
   </Container>
 </footer>

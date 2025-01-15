@@ -12,6 +12,7 @@ import { formatDate, readingTime } from '@/lib/utils'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import { type CollectionEntry, getCollection, render } from 'astro:content'
+import {components} from "../../mixins/autoImportComponents"
 
 export async function getStaticPaths() {
   const posts = (await getCollection('blog'))
@@ -22,6 +23,7 @@ export async function getStaticPaths() {
     props: post,
   }))
 }
+
 type Props = CollectionEntry<'blog'>
 
 const posts = (await getCollection('blog'))
@@ -49,9 +51,11 @@ const nextPost = getNextPost(currentPostId)
 const prevPost = getPrevPost(currentPostId)
 
 const post = Astro.props
+
 const { Content, headings } = await render(post)
 
 const authors = await parseAuthors(post.data.authors ?? [])
+
 ---
 
 <Layout
@@ -147,7 +151,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
         </div>
       </div>
 
-      <PostNavigation prevPost={prevPost} nextPost={nextPost} />
+      <!-- <PostNavigation prevPost={prevPost} nextPost={nextPost} /> -->
     </section>
 
     {headings.length > 0 && <TableOfContents headings={headings} />}
@@ -155,7 +159,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
     <article
       class="prose prose-neutral col-start-2 max-w-none dark:prose-invert"
     >
-      <Content />
+      <Content components={components} />
     </article>
 
     <PostNavigation prevPost={prevPost} nextPost={nextPost} />

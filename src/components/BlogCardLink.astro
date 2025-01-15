@@ -1,0 +1,19 @@
+---
+import { getEntry } from "astro:content"
+import BlogCard from "./BlogCard.astro"
+
+
+type Props = {
+  id: string
+}
+
+const postId = Astro.props.id.replace("[[", "").replace("]]", "").replace(".mdx", "")
+
+const entry = await getEntry('blog', postId);
+
+
+---
+
+<div class="my-5">
+  <BlogCard entry={entry} />
+</div>

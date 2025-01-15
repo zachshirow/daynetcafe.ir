@@ -26,7 +26,7 @@ export const LOCALE: Locale = {
 export const SITE: Site = {
   TITLE: 'کافی نت دی',
   DESCRIPTION:
-    'کافی نتی به وسعت جهان - کافی نت محله شما.',
+    'کافی نتی روستایی با دسترسی جهانی.',
   EMAIL: 'daynetcafe24@gmail.com',
   NUM_POSTS_ON_HOMEPAGE: 5,
   POSTS_PER_PAGE: 5,
@@ -38,6 +38,15 @@ export const NAV_LINKS: Link[] = [
   { href: '/services', label: 'خدمات' },
   { href: '/shop', label: 'فروشگاه' },
 ]
+
+export const FOOTER_LINKS: Link[] = [
+  {href: "/about", label: "درباره ما"},
+  {href: "/blog", label: "وبلاگ"},
+  {href: "/services", label: "خدمات"},
+  {href: "/shop", label: "فروشگاه"},
+  {href: "/tags", label: "تگ ها"},
+]
+
 
 export const SOCIAL_LINKS: Link[] = [
   { href: 'https://github.com/daynetcafe.ir', label: 'GitHub' },

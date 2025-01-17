@@ -14,9 +14,17 @@ export function formatDate(date: Date) {
   }).format(date)
 }
 
+
+
+export function numberWithCommas(x) {
+  var parts = x.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return parts.join(".");
+}
+
 export function readingTime(html: string) {
-  const textOnly = html.replace(/<[^>]+>/g, '')
-  const wordCount = textOnly.split(/\s+/).length
+  const textOnly = html?.replace(/<[^>]+>/g, '')
+  const wordCount = textOnly?.split(/\s+/).length
   const readingTimeMinutes = (wordCount / 200 + 1).toFixed()
   return `${readingTimeMinutes} دقیقه مطالعه`
 }

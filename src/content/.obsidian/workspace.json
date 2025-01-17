@@ -4,35 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "4a5561c088d67be8",
+        "id": "e1fbbd0af0f4d419",
         "type": "tabs",
         "children": [
           {
-            "id": "578ffd2285cbf208",
+            "id": "cc01c889843fa42b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/obsidian-about.mdx",
+                "file": "templates/service.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "obsidian-about"
+              "title": "service"
             }
           },
           {
-            "id": "7e68bcd734fa0f4c",
+            "id": "9400b5d7079981aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/obsidian-about.mdx",
+                "file": "services/print.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "print"
+            }
+          },
+          {
+            "id": "7b720f1926801ee2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templates/post.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "obsidian-about"
+              "title": "post"
             }
           }
         ],
@@ -175,20 +189,36 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "vscode-editor:Create Code File": false
+      "vscode-editor:Create Code File": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "7e68bcd734fa0f4c",
+  "active": "9400b5d7079981aa",
   "lastOpenFiles": [
-    "blog/file-over-app.mdx",
-    "blog/obsidian-sharpen.mdx",
-    "blog/obsidian-about.mdx",
-    "media/Pasted image 20250115192930.png",
     "templates/post.md",
+    "services/print.md",
+    "media/hp-laserjet.jpg",
+    "templates/service.md",
+    "projects/project-b.md",
+    "projects/project-c.md",
+    "products",
+    "projects/project-a.md",
+    "services",
+    "blog/about-zachshirow.md",
+    "blog/yos.mdx",
+    "blog/state-3.mdx",
+    "blog/file-over-app.mdx",
+    "blog/yos.md",
+    "blog/yos.mdط",
+    "blog/obsidian-about.mdx",
+    "blog/zachshirow.md",
+    "blog/obsidian-sharpen.mdx",
+    "media/Pasted image 20250115192930.png",
     "blog/state-2.mdx",
     "templates/BlogCardLink.md",
     "media/Cover Gradient.jpg",
-    "templates",
-    "media"
+    "templates"
   ]
 }

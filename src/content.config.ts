@@ -5,12 +5,7 @@ const blog = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
   schema: ({ image }) =>
     z.object({
-      title: z
-        .string()
-        .max(
-          60,
-          'Title should be 60 characters or less for optimal Open Graph display.',
-        ),
+      aliases: z.array(z.string()),
       description: z
         .string()
         .max(
@@ -24,6 +19,47 @@ const blog = defineCollection({
       draft: z.boolean().optional(),
     }),
 })
+
+const services = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/services' }),
+  schema: ({ image }) =>
+    z.object({
+      aliases: z.array(z.string()),
+      description: z
+        .string()
+        .max(
+          155,
+          'Description should be 155 characters or less for optimal Open Graph display.',
+        ),
+      date: z.coerce.date(),
+      image: image().optional(),
+      tags: z.array(z.string()).optional(),
+      authors: z.array(z.string()).optional(),
+      draft: z.boolean().optional(),
+      price: z.number().optional()
+    }),
+})
+
+const shop = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/products' }),
+  schema: ({ image }) =>
+    z.object({
+      aliases: z.array(z.string()),
+      description: z
+        .string()
+        .max(
+          155,
+          'Description should be 155 characters or less for optimal Open Graph display.',
+        ),
+      date: z.coerce.date(),
+      image: image().optional(),
+      tags: z.array(z.string()).optional(),
+      authors: z.array(z.string()).optional(),
+      draft: z.boolean().optional(),
+      price: z.number().optional()
+    }),
+})
+
 
 const authors = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/authors' }),
@@ -53,4 +89,4 @@ const projects = defineCollection({
     }),
 })
 
-export const collections = { blog, authors, projects }
+export const collections = { blog, authors, projects, services, shop }

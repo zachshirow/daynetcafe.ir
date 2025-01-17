@@ -19,9 +19,15 @@ import sectionize from '@hbsnow/rehype-sectionize'
 
 import icon from 'astro-icon'
 
+import node from '@astrojs/node';
+
+// const permalinks = await getPermalinks("./src/content/blog");
+
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://astro-erudite.vercel.app',
+
   integrations: [
     tailwind({
       applyBaseStyles: false,
@@ -31,6 +37,7 @@ export default defineConfig({
     react(),
     icon(),
   ],
+
   markdown: {
     syntaxHighlight: false,
     rehypePlugins: [
@@ -64,11 +71,17 @@ export default defineConfig({
     ],
     remarkPlugins: [remarkToc, remarkMath, remarkEmoji],
   },
+
   server: {
     port: 1234,
     host: true,
   },
+
   devToolbar: {
     enabled: false,
   },
+  output: 'server',
+  adapter: node({
+    mode: 'standalone',
+  }),
 })

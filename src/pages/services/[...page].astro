@@ -1,0 +1,72 @@
+---
+import BlogCard from '@/components/BlogCard.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import Container from '@/components/Container.astro'
+import PaginationComponent from '@/components/ui/pagination'
+import { SITE } from '@/consts'
+import Layout from '@/layouts/Layout.astro'
+import type { PaginateFunction } from 'astro'
+import { type CollectionEntry, getCollection } from 'astro:content'
+
+export async function getStaticPaths({
+  paginate,
+}: {
+  paginate: PaginateFunction
+}) {
+  const allPosts = await getCollection('services', ({ data }) => !data.draft)
+  return paginate(
+    allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+    { pageSize: SITE.POSTS_PER_PAGE },
+  )
+}
+
+const { page } = Astro.props
+
+const sortedPosts = page.data;
+
+const servicesByYear = page.data.reduce(
+  (acc: Record<string, CollectionEntry<'services'>[]>, service) => {
+    const year = service.data.date.getFullYear().toString()
+    ;(acc[year] ??= []).push(service)
+    return acc
+  },
+  {},
+)
+
+const years = Object.keys(servicesByYear).sort((a, b) => parseInt(b) - parseInt(a))
+
+---
+
+<Layout title="خدمات" description="خدماتی که در کافی نت دی ارائه می دهیم.">
+  <Container class="flex grow flex-col gap-y-6">
+    <Breadcrumbs
+      items={[
+        { label: 'خدمات', href: '/services', icon: 'lucide:archive' },
+        { label: `صفحه ${page.currentPage}`, icon: 'lucide:folder-open' },
+      ]}
+    />
+
+    <div class="flex min-h-[calc(100vh-18rem)] flex-col gap-y-8 ">
+
+      <section class="flex flex-col gap-y-4 prose max-w-full dark:prose-invert">
+      <h1>خدمات</h1>
+      <ul class="not-prose flex flex-col gap-4">
+        {
+          sortedPosts.map(post => {
+            return  <li>
+                    <BlogCard entry={post} />
+                  </li>
+          })
+        }
+      </ul>
+      </section>
+    </div>
+
+    <PaginationComponent
+      currentPage={page.currentPage}
+      totalPages={page.lastPage}
+      baseUrl="/blog/"
+      client:load
+    />
+  </Container>
+</Layout>

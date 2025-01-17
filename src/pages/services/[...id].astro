@@ -13,9 +13,12 @@ import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import { type CollectionEntry, getCollection, render } from 'astro:content'
 import {components} from "../../mixins/autoImportComponents"
+import { CardContent, Card } from '@/components/ui/card'
+import {numberWithCommas} from "@/lib/utils"
+import LeadForm from "@/components/LeadForm.tsx"
 
 export async function getStaticPaths() {
-  const posts = (await getCollection('blog'))
+  const posts = (await getCollection('services'))
     .filter((post) => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   return posts.map((post) => ({
@@ -24,9 +27,9 @@ export async function getStaticPaths() {
   }))
 }
 
-type Props = CollectionEntry<'blog'>
+type Props = CollectionEntry<'services'>
 
-const posts = (await getCollection('blog'))
+const posts = (await getCollection('services'))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 
@@ -68,7 +71,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
   >
     <Breadcrumbs
       items={[
-        { href: '/blog', label: 'وبلاگ', icon: 'lucide:archive' },
+        { href: '/services', label: 'خدمات', icon: 'lucide:archive' },
         { label: post.data.aliases[0], icon: 'lucide:file-text' },
       ]}
       class="col-start-2"
@@ -85,8 +88,8 @@ const authors = await parseAuthors(post.data.authors ?? [])
       )
     }
     <section class="col-start-2 flex flex-col gap-y-6 text-center">
-      <div class="flex flex-col gap-y-4">
-        <h1 class="text-4xl font-bold leading-tight sm:text-5xl">
+      <div class="flex flex-col gap-y-6">
+        <h1 class="text-4xl font-bold leading-normal sm:text-5xl">
           {post.data.aliases[0]}
         </h1>
 
@@ -159,7 +162,25 @@ const authors = await parseAuthors(post.data.authors ?? [])
     <article
       class="prose prose-neutral col-start-2 max-w-none dark:prose-invert"
     >
+      <Card>
+          <CardContent>
+              <div class="flex items-center gap-x-2 justify-between pt-8">
+                <div><h2>شروع قیمت از: {numberWithCommas(post.data.price)} ریال</h2></div>
+                <div><Button variant="outline" size={'lg'}> <a class="not-prose" href="#lead" title="ثبت درخواست">ثبت درخواست</a> </Button></div>
+              </div>
+          </CardContent>
+        </Card>
+
       <Content components={components} />
+      <hr>
+      <Card>
+        <CardContent>
+            <div class="pt-8">
+              <div><h2 id="lead">ثبت درخواست برای دریافت خدمت: {post.data.aliases[0]}</h2></div>
+              <LeadForm client:load="react" />
+            </div>
+        </CardContent>
+      </Card>
     </article>
 
     <PostNavigation prevPost={prevPost} nextPost={nextPost} />

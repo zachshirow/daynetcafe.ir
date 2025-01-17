@@ -4,9 +4,10 @@ aliases:
 description: ""
 date: {{date}}
 tags: 
-- وبلاگ
+- خدمت
 image: "../media/"
 authors: 
 - zachshirow
 - hemra
+price: 
 ---

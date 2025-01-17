@@ -1,0 +1,36 @@
+---
+import { getEntry, getCollection } from "astro:content"
+import BlogCard from "./BlogCard.astro"
+import { type CollectionEntry } from 'astro:content'
+
+type BlogPost = CollectionEntry<'blog'>
+
+
+type Props = {
+  tags: string[]
+}
+
+const resEntries = await getCollection('blog')
+
+
+const entries = Astro.props.tags.map(tag => {
+  const postsWithTag: BlogPost[] = resEntries.filter((post) => post.data.tags?.includes(tag))
+  return postsWithTag[0]
+})
+
+
+
+---
+
+<div class="my-5">
+  <ul class="not-prose flex flex-col gap-4">
+    <li>BlogCardLinkTags</li>
+    {
+      entries.map(post => {
+        return  <li>
+                <BlogCard entry={post} />
+              </li>
+      })
+    }
+  </ul>
+</div>

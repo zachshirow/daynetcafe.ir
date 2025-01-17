@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/file over app.mdx",
+                "file": "blog/obsidian-about.mdx",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "file over app"
+              "title": "obsidian-about"
             }
           }
         ],
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/file over app.mdx",
+                "file": "blog/obsidian-about.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for file over app"
+              "title": "Backlinks for obsidian-about"
             }
           },
           {
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/file over app.mdx",
+                "file": "blog/obsidian-about.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from file over app"
+              "title": "Outgoing links from obsidian-about"
             }
           },
           {
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/file over app.mdx"
+                "file": "blog/obsidian-about.mdx"
               },
               "icon": "lucide-list",
-              "title": "Outline of file over app"
+              "title": "Outline of obsidian-about"
             }
           }
         ]
@@ -178,12 +178,13 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "3863d2e7a583ad18",
+  "active": "7e68bcd734fa0f4c",
   "lastOpenFiles": [
+    "blog/file-over-app.mdx",
+    "blog/obsidian-sharpen.mdx",
+    "blog/obsidian-about.mdx",
     "media/Pasted image 20250115192930.png",
     "templates/post.md",
-    "blog/obsidian-about.mdx",
-    "blog/file over app.mdx",
     "blog/state-2.mdx",
     "templates/BlogCardLink.md",
     "media/Cover Gradient.jpg",

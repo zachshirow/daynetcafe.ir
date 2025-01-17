@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import { Icon } from 'astro-icon/components'
 
 const { prevPost, nextPost } = Astro.props
+
 ---
 
 <div class="col-start-2 flex flex-col gap-4 sm:flex-row">
@@ -27,7 +28,7 @@ const { prevPost, nextPost } = Astro.props
     <div class="flex flex-col items-start overflow-hidden">
       <span class="text-left text-xs text-muted-foreground">بعدی</span>
       <span class="w-full truncate text-left text-sm"
-        >{nextPost?.data.title || 'این جدید ترین مطلب است!'}</span
+        >{nextPost?.data.aliases[0] || 'این جدید ترین مطلب است!'}</span
       >
     </div>
   </Link>
@@ -45,7 +46,7 @@ const { prevPost, nextPost } = Astro.props
     <span class="text-right text-xs text-muted-foreground">قبلی</span
     >
     <span class="w-full truncate text-right text-sm"
-      >{prevPost?.data.title || 'این آخرین مطلب است!'}</span
+      >{prevPost?.data.aliases[0] || 'این آخرین مطلب است!'}</span
     >
   </div>
   <div class="ml-2 flex-shrink-0">

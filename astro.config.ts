@@ -80,7 +80,7 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  output: 'server',
+  output: "static",
   adapter: node({
     mode: 'standalone',
   }),

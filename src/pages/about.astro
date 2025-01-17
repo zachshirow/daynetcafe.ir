@@ -8,6 +8,8 @@ import Layout from '@/layouts/Layout.astro'
 import { getCollection } from 'astro:content'
 import Authors from '@/components/Authors.astro'
 
+export const prerender = true;
+
 const projects = await getCollection('projects')
 
 ---

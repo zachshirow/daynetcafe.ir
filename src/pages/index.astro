@@ -19,6 +19,10 @@ const blog = (await getCollection('blog'))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE)
+
+  export const prerender = true;
+
+
 ---
 
 <Layout title="Home" description={SITE.DESCRIPTION}>

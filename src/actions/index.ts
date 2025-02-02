@@ -6,7 +6,7 @@ type serviceRequest = {
   fullname: string;
   phone: string;
   url: string;
-  description: ?string;
+  description: string;
 }
 
 export const server = {

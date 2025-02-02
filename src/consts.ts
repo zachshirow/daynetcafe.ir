@@ -49,7 +49,7 @@ export const FOOTER_LINKS: Link[] = [
 
 
 export const SOCIAL_LINKS: Link[] = [
-  { href: 'https://github.com/daynetcafe.ir', label: 'GitHub' },
+  { href: 'https://github.com/zachshirow/daynetcafe.ir', label: 'GitHub' },
   { href: 'https://instagram.com', label: 'Instagram' },
   { href: 'daynetcafe24@gmail.com', label: 'Email' },
   { href: '/rss.xml', label: 'RSS' },

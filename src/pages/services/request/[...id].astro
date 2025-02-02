@@ -22,7 +22,6 @@ import BlogCard from "@/components/BlogCard.astro"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-import { actions } from 'astro:actions';
 
 export const prerender = true;
 
@@ -68,27 +67,29 @@ const currentService = Astro.props
       class="prose prose-neutral col-start-2 max-w-none dark:prose-invert"
     >
     
-       <Card className="mb-10">
-        <CardContent>
-            <div class="pt-8">
+       <Card className="mb-10 ">
+        <CardContent className=''>
+            <div class="pt-8 bg-gray-50">
               <div><h2 id="lead">فرم ثبت درخواست</h2></div>
              
               <form id="request-form" class="flex flex-col gap-y-6">
                 
                 <Input name="url" type="text" value={Astro.url} className="hidden"/>
                 
-                <div class="flex flex-col sm:flex-row gap-y-6 gap-x-6 sm:justify-between sm:items-center">
-                  <Label className="sm:min-w-36" htmlFor="fullname">نام و نام خانوادگی:</Label>
-                  <Input required name="fullname" type="text"/>
+                <div class="flex flex-col">
+                  <div class="flex flex-row sm:flex-row gap-y-6 gap-x-6 sm:justify-between sm:items-center">
+                    <Label className="sm:min-w-36" htmlFor="fullname">نام و نام خانوادگی:</Label>
+                    <Input required name="fullname" type="text"/>
+                  </div>
+                  <div class="flex flex-row sm:flex-row gap-y-6 gap-x-6 sm:justify-between sm:items-center">
+                    <Label className="sm:min-w-36" htmlFor="phone">شماره تماس:</Label>
+                    <Input required name="phone" type="phone" />
+                  </div>
+  
+                  <Button id="service-btn" variant="default" type="submit" size={"lg"} id="submit">
+                    ثبت درخواست
+                  </Button>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-y-6 gap-x-6 sm:justify-between sm:items-center">
-                  <Label className="sm:min-w-36" htmlFor="phone">شماره تماس:</Label>
-                  <Input required name="phone" type="phone" />
-                </div>
-
-                <Button variant="outline" type="submit" size={"lg"} id="submit">
-                  ثبت درخواست
-                </Button>
 
               </form>
 
@@ -106,19 +107,7 @@ const currentService = Astro.props
 
   </section>
 
-  <Button
-    variant="outline"
-    size="icon"
-    className="group fixed bottom-8 right-8 z-50 hidden"
-    id="scroll-to-top"
-    title="Scroll to top"
-    aria-label="Scroll to top"
-  >
-    <Icon
-      name="lucide:arrow-up"
-      class="mx-auto size-4 transition-all group-hover:-translate-y-0.5"
-    />
-  </Button>
+  
 
   <script>
 
@@ -126,36 +115,19 @@ const currentService = Astro.props
 
 
     document.addEventListener('astro:page-load', () => {
-
-      const scrollToTopButton = document.getElementById('scroll-to-top')
-      const footer = document.querySelector('footer')
-
-      if (scrollToTopButton && footer) {
-        scrollToTopButton.addEventListener('click', () => {
-          window.scrollTo({ top: 0, behavior: 'smooth' })
-        })
-
-        window.addEventListener('scroll', () => {
-          const footerRect = footer.getBoundingClientRect()
-          const isFooterVisible = footerRect.top <= window.innerHeight
-
-          scrollToTopButton.classList.toggle(
-            'hidden',
-            window.scrollY <= 300 || isFooterVisible,
-          )
-        })
-      }
     
       const form = document.querySelector('form');
 
       form?.addEventListener('submit', async (event) => {
-        
-      event.preventDefault();
+        event.preventDefault();
 
+        
       const formData = new FormData(form);
       const { error } = await actions.serviceRequest(formData);
       if (!error) {
+        
         alert("درخواست شما با موفقیت ثبت شد.")
+
         form.reset()      
       } else {
         alert("مشکلی پیش آمده است. لطفا بعدا تلاش کنید.")

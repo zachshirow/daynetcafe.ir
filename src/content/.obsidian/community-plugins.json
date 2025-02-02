@@ -1,5 +1,5 @@
 [
-  "mdx-as-md-obsidian",
   "vscode-editor",
-  "auto-note-mover"
+  "auto-note-mover",
+  "obsidian-markdown-file-suffix"
 ]

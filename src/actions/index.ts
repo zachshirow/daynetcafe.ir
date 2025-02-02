@@ -6,6 +6,7 @@ type serviceRequest = {
   fullname: string;
   phone: string;
   url: string;
+  description: string;
 }
 
 export const server = {
@@ -16,29 +17,30 @@ export const server = {
       fullname: z.string(), 
       phone: z.string(),
       url: z.string(), 
+      description: z.string()
     }), 
     handler: async (input:serviceRequest) => { 
       
-      //TODO
-      //1. send the data to nocodb database.
       try{ 
-
-        const nocoRequest = await axios({
-          method: "POST",
-          url: "https://app.nocodb.com/api/v2/tables/mpesh0s3r72m2hw/records",
-          headers: {
-            "xc-token": import.meta.env.NOCODB_TOKEN || process.env.NOCODB_TOKEN,
-            "Content-Type": "application/json"
-          },
-          data: {
-            "phone": input.phone,
-            "fullname": input.fullname,
-            "url": input.url
-          }
-        })
+        
+        //TODO
+        //1. send the data to nocodb database.
+        // const nocoRequest = await axios({
+        //   method: "POST",
+        //   url: "https://app.nocodb.com/api/v2/tables/mpesh0s3r72m2hw/records",
+        //   headers: {
+        //     "xc-token": import.meta.env.NOCODB_TOKEN || process.env.NOCODB_TOKEN,
+        //     "Content-Type": "application/json"
+        //   },
+        //   data: {
+        //     "phone": input.phone,
+        //     "fullname": input.fullname,
+        //     "url": input.url
+        //   }
+        // })
     
         
-        //2. send the data as a message to BALE group.
+        // 2. send the data as a message to BALE group.
         const baleToken = import.meta.env.BALE_TOKEN || process.env.BALE_TOKEN
         
         const baleRequest = await axios({
@@ -49,7 +51,7 @@ export const server = {
           },
           data: {
             "chat_id": 5135438946,
-            "text": `\n #درخواست \n \n نام و نام خانوادگی: ${input.fullname} \n \n شماره تماس: ${input.phone} \n \n لینک خدمت: ${input.url}`
+            "text": `\n #درخواست \n \n نام و نام خانوادگی: ${input.fullname} \n \n شماره تماس: ${input.phone} \n \n لینک خدمت: ${input.url} \n \n توضیحات مشتری: \n ${input.description}`
           }
         })
         

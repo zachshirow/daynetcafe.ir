@@ -16,17 +16,20 @@ import remarkEmoji from 'remark-emoji'
 import remarkMath from 'remark-math'
 import remarkToc from 'remark-toc'
 import sectionize from '@hbsnow/rehype-sectionize'
+import rehypeAstroRelativeMarkdownLinks from "astro-rehype-relative-markdown-links";
+// import { getPermalinks } from "@portaljs/remark-wiki-link";
+// import wikiLinkPlugin from "@portaljs/remark-wiki-link";
+// import { getCollection } from 'astro:content'
 
 import icon from 'astro-icon'
 
 import node from '@astrojs/node';
 
-// const permalinks = await getPermalinks("./src/content/blog");
 
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-erudite.vercel.app',
+  site: 'https://daynetcafe.ir',
 
   integrations: [
     tailwind({
@@ -49,6 +52,7 @@ export default defineConfig({
         },
       ],
       rehypeHeadingIds,
+      rehypeAstroRelativeMarkdownLinks,
       rehypeKatex,
       sectionize,
       [
@@ -69,7 +73,15 @@ export default defineConfig({
         },
       ],
     ],
-    remarkPlugins: [remarkToc, remarkMath, remarkEmoji],
+    // remarkPlugins: [[wikiLinkPlugin, { 
+    //   pathFormat: 'obsidian-absolute', 
+    //   // permalinks,
+    //   // wikiLinkResolver: (name: string) => {
+    //   //   console.log(name)
+    //   // }
+    //   // generate url of the linked page.
+    //   // here `slug` would be "Page Name" for wiki link [[Page Name]].
+    // }], remarkToc, remarkMath, remarkEmoji],
   },
 
   server: {

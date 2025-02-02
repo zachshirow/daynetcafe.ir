@@ -3,7 +3,7 @@ title: همه چیز در مورد آزمون یوس ترکیه
 aliases:
   - همه چیز در مورد آزمون یوس ترکیه
 description: در این مقاله فقط در مورد آزمون یوس ترکیه خواهیم نوشت.
-date: 2025-01-17
+date: 2025-02-01
 tags:
   - وبلاگ
 authors:
@@ -69,3 +69,11 @@ https://tryos.osym.gov.tr/TryosYetki/Giris
 
 https://play.google.com/store/apps/details?id=tr.gov.osym.ais.android&hl=en&pli=1
 
+## خدمت ثبت نام در یوس
+
+[[services/yos-signup|ثبت نام در آزمون یوس]]
+
+---
+
+
+<BlogCardLink id="obsidian-about" />

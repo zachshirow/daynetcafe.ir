@@ -8,45 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cc01c889843fa42b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/service.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "service"
-            }
-          },
-          {
-            "id": "9400b5d7079981aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/yos.mdx",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "yos"
-            }
-          },
-          {
             "id": "7b720f1926801ee2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/post.md",
+                "file": "blog/golestan-haj-karavans.mdx",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "post"
+              "title": "golestan-haj-karavans"
+            }
+          },
+          {
+            "id": "8567b2563a53f263",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/golestan-haj-karavans.mdx",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "golestan-haj-karavans"
             }
           }
         ],
@@ -69,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -122,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/obsidian-about.mdx",
+                "file": "blog/golestan-haj-karavans.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for obsidian-about"
+              "title": "Backlinks for golestan-haj-karavans"
             }
           },
           {
@@ -141,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/obsidian-about.mdx",
+                "file": "blog/golestan-haj-karavans.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from obsidian-about"
+              "title": "Outgoing links from golestan-haj-karavans"
             }
           },
           {
@@ -178,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,18 +177,25 @@
       "command-palette:Open command palette": false,
       "vscode-editor:Create Code File": false,
       "audio-recorder:Start/stop recording": false,
-      "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "9400b5d7079981aa",
+  "active": "8567b2563a53f263",
   "lastOpenFiles": [
-    "services/yos-signup.md",
-    "blog/yos.mdx",
-    "templates/service.md",
+    "services/haj-signup.md",
+    "blog/state-2.mdx",
+    "blog/golestan-haj-karavans.mdx",
+    "blog/yos-markdown.md",
     "blog/state-3.mdx",
+    "blog/file-over-app.mdx",
+    "blog/obsidian-about.mdx",
+    "file-over-app.md",
+    "blog/yos.mdx",
+    "services/yos-signup.md",
+    "blog/yos copy.mdx",
     "services/print.md",
     "templates/post.md",
+    "templates/service.md",
     "media/hp-laserjet.jpg",
     "projects/project-b.md",
     "projects/project-c.md",
@@ -210,16 +203,11 @@
     "projects/project-a.md",
     "services",
     "blog/about-zachshirow.md",
-    "blog/file-over-app.mdx",
     "blog/yos.md",
     "blog/yos.mdط",
-    "blog/obsidian-about.mdx",
     "blog/zachshirow.md",
-    "blog/obsidian-sharpen.mdx",
     "media/Pasted image 20250115192930.png",
-    "blog/state-2.mdx",
     "templates/BlogCardLink.md",
-    "media/Cover Gradient.jpg",
-    "templates"
+    "media/Cover Gradient.jpg"
   ]
 }

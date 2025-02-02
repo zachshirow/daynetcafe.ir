@@ -15,7 +15,12 @@ import { type CollectionEntry, getCollection, render } from 'astro:content'
 import {components} from "@/mixins/autoImportComponents"
 import { CardContent, Card } from '@/components/ui/card'
 import {numberWithCommas} from "@/lib/utils"
-import LeadForm from "@/components/LeadForm.astro"
+// import LeadForm from "@/components/LeadForm.astro"
+
+// import BlogCard from "@/components/BlogCard.astro"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 
 export const prerender = true;
 
@@ -168,16 +173,65 @@ const authors = await parseAuthors(post.data.authors ?? [])
           <CardContent>
               <div class="flex flex-col sm:flex-row text-center sm:text-right items-center gap-x-2 justify-between pt-8">
                 <div><h2> <span class="text-sm">شروع قیمت از: </span> <br /> {numberWithCommas(post.data.price)} ریال</h2></div>
-                <div><Button variant="outline" size={'lg'}> <a class="not-prose" href={`/services/request/${currentPostId}`} title="ثبت درخواست">ثبت درخواست</a> </Button></div>
+                <div><Button variant="default" size={'lg'}> <a class="not-prose" href={`#lead`} title="ثبت درخواست">ثبت درخواست</a> </Button></div>
               </div>
           </CardContent>
         </Card>
 
       <Content components={components} />
 
+      <Card className="mb-10">
+        <CardContent>
+            <div class="pt-8">
+              <div><h2 id="lead">فرم ثبت درخواست</h2></div>
+             <p>برای دریافت این خدمت از کافی نت دی، لطفا فرم زیر را پر کنید.</p>
+              <form id="request-form" class="flex flex-col gap-y-6">
+                
+                <Input name="url" type="text" value={Astro.url} className="hidden"/>
+                
+                <div class="flex flex-col sm:flex-row gap-y-2 gap-x-2 sm:justify-start sm:items-center">
+                  <div class="w-full">
+                    <Label className="sm:min-w-36" htmlFor="fullname">نام و نام خانوادگی</Label>
+                    <Input required name="fullname" type="text"/>
+                  </div>
+                  <div class="w-full">
+                    <Label className="sm:min-w-36" htmlFor="phone">شماره تماس</Label>
+                    <Input required name="phone" type="phone" />
+                  </div>
+                </div>
+                <div class="w-full">
+                  <Label className="sm:min-w-36" htmlFor="description">توضیحات</Label>
+                  <Textarea required name="description" placeholder="توضیحات مورد نیاز در مورد پروژه تان را اینجا بنویسید" />
+                </div>
+                
+                <Button className="w-full sm:w-1/2 self-start" id="service-btn" variant="default" type="submit" size={"lg"} id="submit">
+                  ثبت درخواست
+                </Button>
+
+              </form>
+
+            </div>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent>
+          <div class="pt-8">
+            <h3>عنوان های دیگر این خدمت</h3>
+            <ul>
+              {post.data.aliases.map(alias => {
+                return (
+                  <>
+                    <li>{alias}</li>
+                  </>
+                )
+              })}
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
     </article>
 
-    <PostNavigation prevPost={prevPost} nextPost={nextPost} />
+    <!-- <PostNavigation prevPost={prevPost} nextPost={nextPost} /> -->
   </section>
 
   <Button
@@ -194,8 +248,12 @@ const authors = await parseAuthors(post.data.authors ?? [])
     />
   </Button>
 
+
   <script>
-    document.addEventListener('astro:page-load', () => {
+  
+  import { actions } from 'astro:actions';
+  
+  document.addEventListener('astro:page-load', () => {
       const scrollToTopButton = document.getElementById('scroll-to-top')
       const footer = document.querySelector('footer')
 
@@ -214,6 +272,28 @@ const authors = await parseAuthors(post.data.authors ?? [])
           )
         })
       }
+    
+    
+      const form = document.querySelector('form');
+
+form?.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  
+const formData = new FormData(form);
+const { error } = await actions.serviceRequest(formData);
+if (!error) {
+  
+  alert("درخواست شما با موفقیت ثبت شد.")
+
+  form.reset()      
+} else {
+  alert("مشکلی پیش آمده است. لطفا بعدا تلاش کنید.")
+}
+
+})
+    
+    
     })
   </script>
 </Layout>

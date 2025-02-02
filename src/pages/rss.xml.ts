@@ -21,7 +21,7 @@ export async function GET(context: APIContext) {
       description: SITE.DESCRIPTION,
       site: context.site ?? SITE.SITEURL,
       items: items.map((item) => ({
-        title: item.data.title,
+        title: item.data.aliases[0],
         description: item.data.description,
         pubDate: item.data.date,
         link: `/${item.collection}/${item.id}/`,

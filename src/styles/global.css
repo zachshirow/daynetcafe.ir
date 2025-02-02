@@ -90,9 +90,13 @@ code, pre {
   .disable-transitions * {
     @apply !transition-none;
   }
+
 }
 
 @layer components {
+
+  
+
   article {
     @apply prose-headings:scroll-mt-20 prose-headings:break-words first:prose-headings:mt-0 prose-p:break-words prose-a:!break-words prose-a:!decoration-muted-foreground prose-a:underline-offset-[3px] prose-a:transition-colors hover:prose-a:!decoration-foreground prose-pre:!px-0 prose-img:mx-auto;
 
@@ -191,7 +195,7 @@ code, pre {
             }
           }
 
-          /* Copy button */
+          /* Copy [[2025-01-31]] */
           > button:has(> span) {
             @apply right-0.5 top-[3px] m-0 size-8 rounded-md bg-background p-1 backdrop-blur-none transition-all;
           }

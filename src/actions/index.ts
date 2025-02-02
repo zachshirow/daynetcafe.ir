@@ -6,7 +6,7 @@ type serviceRequest = {
   fullname: string;
   phone: string;
   url: string;
-  description: string;
+  description: ?string;
 }
 
 export const server = {
@@ -17,7 +17,7 @@ export const server = {
       fullname: z.string(), 
       phone: z.string(),
       url: z.string(), 
-      description: z.string()
+      description: z.string().optional(),
     }), 
     handler: async (input:serviceRequest) => { 
       

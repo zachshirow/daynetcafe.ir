@@ -201,7 +201,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
                 </div>
                 <div class="w-full">
                   <Label className="sm:min-w-36" htmlFor="description">توضیحات</Label>
-                  <Textarea required name="description" placeholder="توضیحات مورد نیاز در مورد پروژه تان را اینجا بنویسید" />
+                  <Textarea name="description" placeholder="توضیحات مورد نیاز در مورد پروژه تان را اینجا بنویسید" />
                 </div>
                 
                 <Button className="w-full sm:w-1/2 self-start" id="service-btn" variant="default" type="submit" size={"lg"} id="submit">

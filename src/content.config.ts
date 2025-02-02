@@ -40,7 +40,7 @@ const services = defineCollection({
     }),
 })
 
-const shop = defineCollection({
+const products = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/products' }),
   schema: ({ image }) =>
     z.object({
@@ -89,4 +89,4 @@ const projects = defineCollection({
     }),
 })
 
-export const collections = { blog, authors, projects, services, shop }
+export const collections = { blog, authors, projects, services, products }

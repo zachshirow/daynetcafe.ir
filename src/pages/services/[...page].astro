@@ -56,9 +56,11 @@ const years = Object.keys(servicesByYear).sort((a, b) => parseInt(b) - parseInt(
       <ul class="not-prose flex flex-col gap-4">
         {
           sortedPosts.map(post => {
-            return  <li>
-                    <BlogCard entry={post} />
-                  </li>
+            return  (
+                <li>
+                  <BlogCard entry={post} />
+                </li>
+              )
           })
         }
       </ul>
@@ -68,7 +70,7 @@ const years = Object.keys(servicesByYear).sort((a, b) => parseInt(b) - parseInt(
     <PaginationComponent
       currentPage={page.currentPage}
       totalPages={page.lastPage}
-      baseUrl="/blog/"
+      baseUrl="/services/"
       client:load
     />
   </Container>

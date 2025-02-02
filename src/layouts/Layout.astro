@@ -4,6 +4,8 @@ import Head from '@/components/Head.astro'
 import Header from '@/components/Header.astro'
 import { SITE } from '@/consts'
 import { Toaster } from "@/components/ui/toaster"
+import "../styles/global.css"
+import "../styles/index.css";
 
 type Props = {
   title: string
@@ -22,6 +24,7 @@ const { title, description, image } = Astro.props
       description={description}
       image={image}
     />
+    
   </head>
   <body>
     <div

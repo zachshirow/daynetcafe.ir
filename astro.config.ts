@@ -17,12 +17,9 @@ import remarkMath from 'remark-math'
 import remarkToc from 'remark-toc'
 import sectionize from '@hbsnow/rehype-sectionize'
 import rehypeAstroRelativeMarkdownLinks from "astro-rehype-relative-markdown-links";
-// import { getPermalinks } from "@portaljs/remark-wiki-link";
-// import wikiLinkPlugin from "@portaljs/remark-wiki-link";
-// import { getCollection } from 'astro:content'
+import remarkLinkCard from 'remark-link-card-plus';
 
 import icon from 'astro-icon'
-
 import node from '@astrojs/node';
 
 
@@ -73,15 +70,18 @@ export default defineConfig({
         },
       ],
     ],
-    // remarkPlugins: [[wikiLinkPlugin, { 
-    //   pathFormat: 'obsidian-absolute', 
-    //   // permalinks,
-    //   // wikiLinkResolver: (name: string) => {
-    //   //   console.log(name)
-    //   // }
-    //   // generate url of the linked page.
-    //   // here `slug` would be "Page Name" for wiki link [[Page Name]].
-    // }], remarkToc, remarkMath, remarkEmoji],
+    remarkPlugins: [
+      [
+        remarkLinkCard, {
+          cache: true,
+          shortenUrl: true,
+          thumbnailPosition: "left",
+        },
+      ],
+      remarkToc, 
+      // remarkMath, 
+      // remarkEmoji
+    ],
   },
 
   server: {

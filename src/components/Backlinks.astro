@@ -10,8 +10,9 @@ const allLinks = {};
 
 const allPosts = await getCollection('blog');
 const allServices = await getCollection('services');
-// const allPosts = await getCollection('blog');
-// const allPosts = await getCollection('blog');
+// const allProjects = await getCollection('projects');
+// const allProducts = await getCollection('products');
+
 const allContent = [...allPosts, ...allServices]
 
 
@@ -57,11 +58,15 @@ const backlinks = allLinks[pathname] || [];
 ---
 
 {backlinks.length > 0 && (
-  <ul>
-    {backlinks.map((backlink) => (
-      <li>
-        <Link href={backlink.url}>{backlink.frontmatter.aliases[0]}</Link>
-      </li>
-    ))}
-  </ul>
+  <>
+    <h2>بک لینک ها</h2>
+
+    <ul>
+      {backlinks.map((backlink) => (
+        <li>
+          <Link href={backlink.url}>{backlink.frontmatter.aliases[0]}</Link>
+        </li>
+      ))}
+    </ul>
+  </>
 )}

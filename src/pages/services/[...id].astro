@@ -21,6 +21,7 @@ import {numberWithCommas} from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import Backlinks from '@/components/Backlinks.astro'
 
 export const prerender = true;
 
@@ -183,7 +184,8 @@ const authors = await parseAuthors(post.data.authors ?? [])
         </Card>
 
       <Content components={components} />
-
+        <hr>
+        <Backlinks />
       <Card className="mb-10">
         <CardContent>
             <div class="pt-8">

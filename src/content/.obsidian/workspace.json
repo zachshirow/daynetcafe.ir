@@ -11,10 +11,14 @@
             "id": "1680e60396fa6b0c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "blog/about-yos-exam.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "about-yos-exam"
             }
           }
         ]
@@ -90,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/iran-khodro-day-23/index.mdx",
+                "file": "blog/about-yos-exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for about-yos-exam"
             }
           },
           {
@@ -160,29 +164,32 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "3863d2e7a583ad18",
+  "active": "1680e60396fa6b0c",
   "lastOpenFiles": [
-    "snippets/turkey-required-docs.md",
-    "2025-02-03.md",
+    "blog/about-sat-exam.md",
+    "blog/about-yos-exam.md",
     "blog/istanbul-university.mdx",
-    "templates/snippet.md",
+    "blog/study-in-turkey.md",
+    "Untitled.md",
+    "snippets/turkey-required-docs.md",
+    "blog/golestan-haj-karavans.mdx",
+    "blog/about-tomer-exam.mdx",
     "blog/file-over-app.mdx",
+    "blog/iran-khodro-day-23/index.mdx",
+    "2025-02-03.md",
+    "templates/snippet.md",
     "snippets",
     "services/yos-signup.mdx",
     "templates/BlogCardLinkTags.md",
     "blog/istanbul-university.md",
-    "blog/golestan-haj-karavans.mdx",
     "services/yos-signup.md",
     "templates/BlogCardLink.md",
-    "blog/about-yos-exam.md",
     "services/haj-signup.md",
     "blog/about-zachshirow.md",
     "blog/obsidian-about.mdx",
     "blog/obsidian-sharpen.mdx",
     "blog/state-2.mdx",
-    "blog/state-3.mdx",
     "file-over-app.md",
-    "blog/yos.mdx",
     "services/print.md",
     "templates/post.md",
     "templates/service.md",

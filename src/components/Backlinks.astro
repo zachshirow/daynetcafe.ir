@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+import Link from './Link.astro';
+
+const pathname = Astro.url.pathname.split("/")[2]
+
+console.log(pathname)
+
+const allLinks = {};
+
+const allPosts = await getCollection('blog');
+const allServices = await getCollection('services');
+// const allPosts = await getCollection('blog');
+// const allPosts = await getCollection('blog');
+const allContent = [...allPosts, ...allServices]
+
+
+
+const linkRegex = /\[.*?\]\((.*?)\)/g;
+
+
+allContent.forEach((post) => {
+  const links = [...post.body.matchAll(linkRegex)];
+  
+    
+
+  if (links) {
+    links.forEach((link) => {
+
+      const linkUrlArray = link[1].replace(".mdx", "").replace(".md", "").split("/");
+        
+      const linkUrl = linkUrlArray[linkUrlArray.length - 1]
+
+      console.log(linkUrl)
+        
+      if (linkUrl) {
+
+        if (!allLinks[linkUrl]) {
+          allLinks[linkUrl] = [];
+        }
+        
+        allLinks[linkUrl].push({
+          frontmatter: post.data,
+          url: `/${post.collection}/${post.id}`
+        });
+      }
+    });
+  }
+});
+
+const backlinks = allLinks[pathname] || [];
+
+// console.log(allLinks)
+// console.log(pathname)
+// console.log(backlinks)
+
+---
+
+{backlinks.length > 0 && (
+  <ul>
+    {backlinks.map((backlink) => (
+      <li>
+        <Link href={backlink.url}>{backlink.frontmatter.aliases[0]}</Link>
+      </li>
+    ))}
+  </ul>
+)}

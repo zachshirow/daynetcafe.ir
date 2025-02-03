@@ -13,6 +13,7 @@ import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import { type CollectionEntry, getCollection, render } from 'astro:content'
 import {components} from "@/mixins/autoImportComponents"
+import Backlinks from '@/components/Backlinks.astro'
 
 export const prerender = true;
 
@@ -162,7 +163,11 @@ const authors = await parseAuthors(post.data.authors ?? [])
       class="prose prose-neutral col-start-2 max-w-none dark:prose-invert"
     >
       <Content components={components} />
-      
+      <hr>
+      <h3>
+        بک لینک ها
+      </h3>
+      <Backlinks />
     </article>
 
     <PostNavigation prevPost={prevPost} nextPost={nextPost} />

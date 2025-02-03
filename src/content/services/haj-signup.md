@@ -19,4 +19,4 @@ price: 2000000
 
 
 مقاله های مرتبط: 
-
+- [golestan-haj-karavans](../blog/golestan-haj-karavans.mdx)

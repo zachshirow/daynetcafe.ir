@@ -4,39 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "e1fbbd0af0f4d419",
+        "id": "1bc5eadfe6ee9983",
         "type": "tabs",
         "children": [
           {
-            "id": "7b720f1926801ee2",
+            "id": "20988d71b4b46c6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/golestan-haj-karavans.mdx",
+                "file": "blog/about-yos-exam.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "golestan-haj-karavans"
+              "title": "about-yos-exam"
             }
           },
           {
-            "id": "8567b2563a53f263",
+            "id": "d28240857fa96a88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/golestan-haj-karavans.mdx",
+                "file": "services/yos-signup.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "golestan-haj-karavans"
+              "title": "yos-signup"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -55,7 +54,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/golestan-haj-karavans.mdx",
+                "file": "blog/about-yos-exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for golestan-haj-karavans"
+              "title": "Backlinks for about-yos-exam"
             }
           },
           {
@@ -178,18 +178,22 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "8567b2563a53f263",
+  "active": "20988d71b4b46c6e",
   "lastOpenFiles": [
+    "blog/istanbul-university.md",
+    "blog/about-yos-exam.md",
+    "services/yos-signup.md",
     "services/haj-signup.md",
-    "blog/state-2.mdx",
     "blog/golestan-haj-karavans.mdx",
-    "blog/yos-markdown.md",
-    "blog/state-3.mdx",
     "blog/file-over-app.mdx",
+    "blog/about-zachshirow.md",
     "blog/obsidian-about.mdx",
+    "blog/obsidian-sharpen.mdx",
+    "2025-02-03.md",
+    "blog/state-2.mdx",
+    "blog/state-3.mdx",
     "file-over-app.md",
     "blog/yos.mdx",
-    "services/yos-signup.md",
     "blog/yos copy.mdx",
     "services/print.md",
     "templates/post.md",
@@ -200,9 +204,7 @@
     "products",
     "projects/project-a.md",
     "services",
-    "blog/about-zachshirow.md",
     "blog/yos.md",
-    "blog/yos.mdط",
     "blog/zachshirow.md",
     "media/Pasted image 20250115192930.png",
     "templates/BlogCardLink.md",

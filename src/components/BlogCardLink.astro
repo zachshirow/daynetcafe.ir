@@ -5,13 +5,15 @@ import BlogCard from "./BlogCard.astro"
 
 type Props = {
   id: string
+  collection: "blog" | "services" | "products"
 }
 
 
 
-const postId = Astro.props.id.replace("[[", "").replace("]]", "").replace(".mdx", "")
+const postId = Astro.props.id
+const postCollection = Astro.props.collection || "blog"
 
-const entry = await getEntry('blog', postId);
+const entry = await getEntry(postCollection, postId);
 
 
 ---

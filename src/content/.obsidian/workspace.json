@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1bc5eadfe6ee9983",
+        "id": "1d3abee8398e0b22",
         "type": "tabs",
         "children": [
           {
-            "id": "20988d71b4b46c6e",
+            "id": "1680e60396fa6b0c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/about-yos-exam.md",
-                "mode": "source",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "about-yos-exam"
-            }
-          },
-          {
-            "id": "d28240857fa96a88",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "services/yos-signup.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "yos-signup"
+              "title": "New tab"
             }
           }
         ]
@@ -108,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/about-yos-exam.md",
+                "file": "blog/iran-khodro-day-23/index.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for about-yos-exam"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -178,36 +160,39 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "20988d71b4b46c6e",
+  "active": "3863d2e7a583ad18",
   "lastOpenFiles": [
-    "blog/istanbul-university.md",
-    "blog/about-yos-exam.md",
-    "services/yos-signup.md",
-    "services/haj-signup.md",
-    "blog/golestan-haj-karavans.mdx",
+    "snippets/turkey-required-docs.md",
+    "2025-02-03.md",
+    "blog/istanbul-university.mdx",
+    "templates/snippet.md",
     "blog/file-over-app.mdx",
+    "snippets",
+    "services/yos-signup.mdx",
+    "templates/BlogCardLinkTags.md",
+    "blog/istanbul-university.md",
+    "blog/golestan-haj-karavans.mdx",
+    "services/yos-signup.md",
+    "templates/BlogCardLink.md",
+    "blog/about-yos-exam.md",
+    "services/haj-signup.md",
     "blog/about-zachshirow.md",
     "blog/obsidian-about.mdx",
     "blog/obsidian-sharpen.mdx",
-    "2025-02-03.md",
     "blog/state-2.mdx",
     "blog/state-3.mdx",
     "file-over-app.md",
     "blog/yos.mdx",
-    "blog/yos copy.mdx",
     "services/print.md",
     "templates/post.md",
     "templates/service.md",
     "media/hp-laserjet.jpg",
     "projects/project-b.md",
     "projects/project-c.md",
-    "products",
     "projects/project-a.md",
-    "services",
     "blog/yos.md",
     "blog/zachshirow.md",
     "media/Pasted image 20250115192930.png",
-    "templates/BlogCardLink.md",
     "media/Cover Gradient.jpg"
   ]
 }

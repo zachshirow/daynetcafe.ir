@@ -78,3 +78,4 @@ https://play.google.com/store/apps/details?id=tr.gov.osym.ais.android&hl=en&pli=
 
 [ثبت نام در آزمون یوس](../services/yos-signup.md)
 
+<BlogCardLink id="" />

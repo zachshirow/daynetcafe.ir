@@ -1,14 +1,6 @@
 {
   "editor:cycle-list-checklist": [],
   "daily-notes:goto-next": [],
-  "daily-notes": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "D"
-    }
-  ],
   "workspace:export-pdf": [
     {
       "modifiers": [

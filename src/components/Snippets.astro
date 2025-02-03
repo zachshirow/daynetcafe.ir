@@ -1,0 +1,14 @@
+---
+import { type CollectionEntry, getCollection , getEntry, render } from 'astro:content'
+
+type Props = {
+    id: string;
+}
+
+const snippet: CollectionEntry<'snippets'> = await getEntry("snippets", Astro.props.id)
+
+const { Content } = await render(snippet)
+
+---
+
+<Content />

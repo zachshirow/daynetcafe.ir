@@ -12,7 +12,8 @@ import { formatDate, readingTime } from '@/lib/utils'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import { type CollectionEntry, getCollection, render } from 'astro:content'
-import {components} from "@/mixins/autoImportComponents"
+
+
 import { CardContent, Card } from '@/components/ui/card'
 import {numberWithCommas} from "@/lib/utils"
 // import LeadForm from "@/components/LeadForm.astro"
@@ -21,6 +22,7 @@ import {numberWithCommas} from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { components } from "@/mixins/autoImportComponents"
 import Backlinks from '@/components/Backlinks.astro'
 
 export const prerender = true;
@@ -183,7 +185,8 @@ const authors = await parseAuthors(post.data.authors ?? [])
           </CardContent>
         </Card>
 
-      <Content components={components} />
+        <Content components={components} />
+
         <hr>
         <Backlinks />
       <Card className="mb-10">

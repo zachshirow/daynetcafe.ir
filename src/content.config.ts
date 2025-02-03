@@ -20,6 +20,15 @@ const blog = defineCollection({
     }),
 })
 
+const snippets = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/snippets' }),
+  schema: () =>
+    z.object({
+      aliases: z.array(z.string()),
+      tags: z.array(z.string()).optional(),
+    }),
+})
+
 const services = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/services' }),
   schema: ({ image }) =>
@@ -89,4 +98,4 @@ const projects = defineCollection({
     }),
 })
 
-export const collections = { blog, authors, projects, services, products }
+export const collections = { blog, authors, projects, services, products, snippets }

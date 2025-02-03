@@ -1,1 +1,1 @@
-<BlogCardLink id="" />
+<BlogCardLink  id="" collection="blog" collection="services" />

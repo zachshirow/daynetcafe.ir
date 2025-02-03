@@ -3,14 +3,17 @@ import { getEntry, getCollection } from "astro:content"
 import BlogCard from "./BlogCard.astro"
 import { type CollectionEntry } from 'astro:content'
 
-type BlogPost = CollectionEntry<'blog'>
+type BlogPost = CollectionEntry<'blog'> | CollectionEntry<'services'> | CollectionEntry<'products'>
 
 
 type Props = {
   tags: string[]
+  collection: "blog" | "services" | "products"
 }
 
-const resEntries = await getCollection('blog')
+const collection = Astro.props.collection || "blog"
+
+const resEntries = await getCollection(collection)
 
 
 const entries = Astro.props.tags.map(tag => {
@@ -24,7 +27,6 @@ const entries = Astro.props.tags.map(tag => {
 
 <div class="my-5">
   <ul class="not-prose flex flex-col gap-4">
-    <li>BlogCardLinkTags</li>
     {
       entries.map(post => {
         return  <li>

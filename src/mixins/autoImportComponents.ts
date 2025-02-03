@@ -1,9 +1,9 @@
 import BlogCardLink from '../components/BlogCardLink.astro';
-import BlogCardLinkTags from '../components/BlogCardLinkTags.astro';
-import { LinkPreview } from 'astro-embed';
+import Snippets from '@/components/Snippets.astro';
+// import { LinkPreview } from 'astro-embed';
+// import BlogCardLinkTags from '../components/BlogCardLinkTags.astro';
 
 export const components = {
     BlogCardLink, 
-    BlogCardLinkTags, 
-    LinkPreview
+    Snippets
 }

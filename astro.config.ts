@@ -27,7 +27,7 @@ import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://daynetcafe.ir',
+  site: 'https://daynetcafeir.liara.run',
   output: "static",
   adapter: node({
     mode: 'standalone',

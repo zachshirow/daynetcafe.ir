@@ -33,7 +33,7 @@ export const SITE: Site = {
   EMAIL: 'daynetcafe24@gmail.com',
   NUM_POSTS_ON_HOMEPAGE: 5,
   POSTS_PER_PAGE: 5,
-  SITEURL: 'https://daynetcafe.ir',
+  SITEURL: 'https://daynetcafeir.liara.run',
   SERVICES: 20, 
   CUSTOMERS: 137, 
   PROJECTS: 157

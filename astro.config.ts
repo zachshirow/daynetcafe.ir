@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config"
+import { defineConfig, passthroughImageService } from "astro/config"
 
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 import mdx from '@astrojs/mdx'
@@ -38,6 +38,7 @@ export default defineConfig({
   },
   image: {
     // Example: Allow remote image optimization from a single domain
+    service: passthroughImageService(), 
     domains: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'gravatar.com'],
   },
   output: "static",

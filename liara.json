@@ -1,6 +1,6 @@
 {
     "app": "daynetcafeir",
-    "port": 3000,
+    "port": 1234,
     "build": {
         "location": "iran"
     },

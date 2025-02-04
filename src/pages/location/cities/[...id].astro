@@ -6,9 +6,8 @@ import { Button } from '@/components/ui/button'
 import Layout from '@/layouts/Layout.astro'
 import { Image } from 'astro:assets'
 import Authors from '@/components/Authors.astro'
+import { SITE } from '@/consts'
 
-
-import cities from "@/data/cities.json"
 
 export const prerender = false;
 
@@ -19,19 +18,24 @@ type Props = {
   province_id: number;
 }
 
-export async function getStaticPaths() {
-  
-    
-  return cities.map((city) => ({
-    params: { id: city.slug },
-    props: city,
-  }))
+const slugpath = Astro.url.pathname.split('/')
+
+const slug = slugpath[slugpath.length - 1]
+
+const cities = async function(){
+  const res = await fetch(`${Astro.url.host}/data/cities.json`)
+  const cities = await res.json()
+  console.log(cities)
+  return cities
 }
 
 
+// const city = Astro.props
 
-const city = Astro.props
 
+const city = {
+  name: "گنبد"
+}
 
 ---
 

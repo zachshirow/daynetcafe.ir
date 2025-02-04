@@ -2,15 +2,15 @@
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import Container from '@/components/Container.astro'
 import Link from '@/components/Link.astro'
-import ProjectCard from '@/components/ProjectCard.astro'
 import { SITE } from '@/consts'
 import Layout from '@/layouts/Layout.astro'
-import { getCollection } from 'astro:content'
 import Authors from '@/components/Authors.astro'
+// import ProjectCard from '@/components/ProjectCard.astro'
+// import { getCollection } from 'astro:content'
 
 export const prerender = true;
 
-const projects = await getCollection('projects')
+// const projects = await getCollection('projects')
 
 ---
 

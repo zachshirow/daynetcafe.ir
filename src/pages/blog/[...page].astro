@@ -6,7 +6,9 @@ import PaginationComponent from '@/components/ui/pagination'
 import { SITE } from '@/consts'
 import Layout from '@/layouts/Layout.astro'
 import type { PaginateFunction } from 'astro'
-import { type CollectionEntry, getCollection } from 'astro:content'
+import { 
+  // type CollectionEntry, 
+  getCollection } from 'astro:content'
 
 export const prerender = true;
 
@@ -26,14 +28,14 @@ const { page } = Astro.props
 
 const sortedPosts = page.data;
 
-const postsByYear = page.data.reduce(
-  (acc: Record<string, CollectionEntry<'blog'>[]>, post) => {
-    const year = post.data.date.getFullYear().toString()
-    ;(acc[year] ??= []).push(post)
-    return acc
-  },
-  {},
-)
+// const postsByYear = page.data.reduce(
+//   (acc: Record<string, CollectionEntry<'blog'>[]>, post) => {
+//     const year = post.data.date.getFullYear().toString()
+//     ;(acc[year] ??= []).push(post)
+//     return acc
+//   },
+//   {},
+// )
 
 // const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
 

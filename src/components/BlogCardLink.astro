@@ -1,5 +1,5 @@
 ---
-import { getEntry, getCollection } from "astro:content"
+import { type CollectionEntry, getEntry } from "astro:content"
 import BlogCard from "./BlogCard.astro"
 
 
@@ -8,16 +8,25 @@ type Props = {
   collection: "blog" | "services" | "products"
 }
 
+type Entry = CollectionEntry<"blog"> | CollectionEntry<"services"> | CollectionEntry<"products"> | undefined
 
 
 const postId = Astro.props.id
 const postCollection = Astro.props.collection || "blog"
 
-const entry = await getEntry(postCollection, postId);
+const entry: Entry = await getEntry(postCollection, postId);
+
+// let currentEntry: Entry
+
+// if(entry != undefined){
+//   currentEntry = entry
+// }
 
 
 ---
 
-<div class="my-5">
-  <BlogCard entry={entry} />
-</div>
+{
+  entry && <div class="my-5">
+    <BlogCard entry={entry} />
+  </div>
+}

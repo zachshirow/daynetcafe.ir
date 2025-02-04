@@ -177,7 +177,9 @@ const authors = await parseAuthors(post.data.authors ?? [])
       <Card>
           <CardContent>
               <div class="flex flex-col sm:flex-row text-center sm:text-right items-center gap-x-2 justify-between pt-8">
-                <div><h2> <span class="text-sm font-light">شروع قیمت از: </span> <br /> {numberWithCommas(post.data.price)} ریال</h2></div>
+                <div><h2> <span class="text-sm font-light">شروع قیمت از: </span> <br /> {
+                  post.data.price && numberWithCommas(post.data.price)
+                } ریال</h2></div>
                 <div class="flex flex-col gap-y-2">
                   <Button variant="default" size={'lg'}> <a class="not-prose" href={`#lead`} title="ثبت درخواست">ثبت درخواست</a> </Button>
                   <Button variant="ghost" size={'lg'}> <a class="not-prose" href={`tel:+989037371958`} title="تماس با ما">تماس با ما</a> </Button>

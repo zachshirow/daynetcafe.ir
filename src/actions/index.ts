@@ -1,13 +1,13 @@
-import { defineAction } from 'astro:actions';
+import {defineAction} from 'astro:actions';
 import { z } from 'astro:schema';
 import axios from "axios"
 
-type serviceRequest = {
-  fullname: string;
-  phone: string;
-  url: string;
-  description: string;
-}
+// type ServiceRequest = {
+//   fullname: string;
+//   phone: string;
+//   url: string;
+//   description: string;
+// }
 
 export const server = {
 
@@ -73,13 +73,4 @@ export const server = {
 
      },
     ), 
-
-  getGreeting: defineAction({
-    input: z.object({
-      name: z.string(),
-    }),
-    handler: async (input: HTMLButtonElement) => {
-      return `Hello, ${input.name}!`
-    }
-  })
 }

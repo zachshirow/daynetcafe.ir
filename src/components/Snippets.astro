@@ -1,14 +1,23 @@
 ---
-import { type CollectionEntry, getCollection , getEntry, render } from 'astro:content'
+import { type CollectionEntry , getEntry, render } from 'astro:content'
 
 type Props = {
     id: string;
 }
 
-const snippet: CollectionEntry<'snippets'> = await getEntry("snippets", Astro.props.id)
+type Snippet = CollectionEntry<"snippets"> | undefined
 
-const { Content } = await render(snippet)
+const snippet: Snippet = await getEntry("snippets", Astro.props.id)
+
+let SnippetContent
+
+if(snippet != undefined){
+    const { Content } = await render(snippet)
+    SnippetContent = Content
+}
 
 ---
 
-<Content />
+{
+    SnippetContent && <SnippetContent />
+}

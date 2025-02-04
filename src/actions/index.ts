@@ -19,7 +19,7 @@ export const server = {
       url: z.string(), 
       description: z.string().optional(),
     }), 
-    handler: async (input:serviceRequest) => { 
+    handler: async (input: any) => { 
       
       try{ 
         

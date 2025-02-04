@@ -1,3 +1,4 @@
+import { defineConfig } from "astro/config"
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 import mdx from '@astrojs/mdx'
 import react from '@astrojs/react'
@@ -8,7 +9,6 @@ import {
   transformerMetaHighlight,
   transformerNotationDiff,
 } from '@shikijs/transformers'
-import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypePrettyCode from 'rehype-pretty-code'
@@ -88,7 +88,7 @@ export default defineConfig({
   },
 
   server: {
-    port: 4321,
+    port: 1234,
     host: true,
   },
 

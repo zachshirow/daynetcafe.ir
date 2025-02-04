@@ -27,8 +27,8 @@ import SiteLogo from './SiteLogo.astro'
             ))
           }
         </nav>
-        <MobileMenu client:only transition:persist />
-        <ModeToggle client:only transition:persist />
+        <MobileMenu client:load transition:persist />
+        <ModeToggle client:load transition:persist />
       </div>
     </div>
   </Container>

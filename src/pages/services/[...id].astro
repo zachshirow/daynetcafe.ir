@@ -1,7 +1,7 @@
 ---
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import Link from '@/components/Link.astro'
-import PostNavigation from '@/components/PostNavigation.astro'
+// import PostNavigation from '@/components/PostNavigation.astro'
 import TableOfContents from '@/components/TableOfContents.astro'
 import { badgeVariants } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -23,9 +23,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { components } from "@/mixins/autoImportComponents"
-import Backlinks from '@/components/Backlinks.astro'
+// import Backlinks from '@/components/Backlinks.astro'
 
-export const prerender = false;
+export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = (await getCollection('services'))
@@ -39,35 +39,37 @@ export async function getStaticPaths() {
 
 type Props = CollectionEntry<'services'>
 
-const posts = (await getCollection('services'))
-  .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+// const posts = (await getCollection('services'))
+//   .filter((post) => !post.data.draft)
+//   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 
-function getPostIndex(id: string): number {
-  return posts.findIndex((post) => post.id === id)
-}
+// function getPostIndex(id: string): number {
+//   return posts.findIndex((post) => post.id === id)
+// }
 
-function getPrevPost(id: string): Props | null {
-  const postIndex = getPostIndex(id)
-  return postIndex !== -1 && postIndex < posts.length - 1
-    ? posts[postIndex + 1]
-    : null
-}
+// function getPrevPost(id: string): Props | null {
+//   const postIndex = getPostIndex(id)
+//   return postIndex !== -1 && postIndex < posts.length - 1
+//     ? posts[postIndex + 1]
+//     : null
+// }
 
-function getNextPost(id: string): Props | null {
-  const postIndex = getPostIndex(id)
-  return postIndex > 0 ? posts[postIndex - 1] : null
-}
+// function getNextPost(id: string): Props | null {
+//   const postIndex = getPostIndex(id)
+//   return postIndex > 0 ? posts[postIndex - 1] : null
+// }
 
-const currentPostId = Astro.params.id
-const nextPost = getNextPost(currentPostId)
-const prevPost = getPrevPost(currentPostId)
+// const currentPostId = Astro.params.id
+// const nextPost = getNextPost(currentPostId)
+// const prevPost = getPrevPost(currentPostId)
 
 const post = Astro.props
 
 const { Content, headings } = await render(post)
 
 const authors = await parseAuthors(post.data.authors ?? [])
+
+
 
 ---
 
@@ -196,7 +198,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
              <p>برای دریافت این خدمت از کافی نت دی، لطفا فرم زیر را پر کنید.</p>
               <form id="request-form" class="flex flex-col gap-y-6">
                 
-                <Input name="url" type="text" value={Astro.url} className="hidden"/>
+                <Input name="url" type="text" value={Astro.url.href} className="hidden"/>
                 
                 <div class="flex flex-col sm:flex-row gap-y-2 gap-x-2 sm:justify-start sm:items-center">
                   <div class="w-full">

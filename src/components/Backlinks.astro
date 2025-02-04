@@ -1,55 +1,57 @@
 ---
-import { getCollection } from 'astro:content';
-import Link from './Link.astro';
+// import { getCollection } from 'astro:content';
+// import Link from './Link.astro';
 
-const pathname = Astro.url.pathname.split("/")[2]
+// const pathname = Astro.url.pathname.split("/")[2]
 
-console.log(pathname)
-
-const allLinks = {};
-
-const allPosts = await getCollection('blog');
-const allServices = await getCollection('services');
-// const allProjects = await getCollection('projects');
-// const allProducts = await getCollection('products');
-
-const allContent = [...allPosts, ...allServices]
+// console.log(pathname)
 
 
 
-const linkRegex = /\[.*?\]\((.*?)\)/g;
+// const allLinks = {};
+
+// const allPosts = await getCollection('blog');
+// const allServices = await getCollection('services');
+// // const allProjects = await getCollection('projects');
+// // const allProducts = await getCollection('products');
+
+// const allContent = [...allPosts, ...allServices]
 
 
-allContent.forEach((post) => {
-  const links = [...post.body.matchAll(linkRegex)];
+
+// const linkRegex = /\[.*?\]\((.*?)\)/g;
+
+
+// allContent.forEach((post) => {
+//   const links = [...post.body.matchAll(linkRegex)];
   
     
 
-  if (links) {
-    links.forEach((link) => {
+//   if (links) {
+//     links.forEach((link) => {
 
-      const linkUrlArray = link[1].replace(".mdx", "").replace(".md", "").split("/");
+//       const linkUrlArray = link[1].replace(".mdx", "").replace(".md", "").split("/");
         
-      const linkUrl = linkUrlArray[linkUrlArray.length - 1]
+//       const linkUrl: string = linkUrlArray[linkUrlArray.length - 1]
 
-      console.log(linkUrl)
+//       console.log(linkUrl)
         
-      if (linkUrl) {
+//       if (linkUrl) {
 
-        if (!allLinks[linkUrl]) {
-          allLinks[linkUrl] = [];
-        }
+//         if (!allLinks[linkUrl]) {
+//           allLinks[linkUrl] = [];
+//         }
         
-        allLinks[linkUrl].push({
-          frontmatter: post.data,
-          url: `/${post.collection}/${post.id}`
-        });
-      }
-    });
-  }
-});
+//         allLinks[linkUrl].push({
+//           frontmatter: post.data,
+//           url: `/${post.collection}/${post.id}`
+//         });
+//       }
+//     });
+//   }
+// });
 
-const backlinks = allLinks[pathname] || [];
+// const backlinks = allLinks[pathname] || [];
 
 // console.log(allLinks)
 // console.log(pathname)
@@ -57,7 +59,7 @@ const backlinks = allLinks[pathname] || [];
 
 ---
 
-{backlinks.length > 0 && (
+<!-- {backlinks.length > 0 && (
   <>
     <h2>بک لینک ها</h2>
 
@@ -69,4 +71,4 @@ const backlinks = allLinks[pathname] || [];
       ))}
     </ul>
   </>
-)}
+)} -->

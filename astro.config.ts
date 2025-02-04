@@ -12,8 +12,8 @@ import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypePrettyCode from 'rehype-pretty-code'
-import remarkEmoji from 'remark-emoji'
-import remarkMath from 'remark-math'
+// import remarkEmoji from 'remark-emoji'
+// import remarkMath from 'remark-math'
 import remarkToc from 'remark-toc'
 import sectionize from '@hbsnow/rehype-sectionize'
 import rehypeAstroRelativeMarkdownLinks from "astro-rehype-relative-markdown-links";
@@ -27,7 +27,10 @@ import node from '@astrojs/node';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://daynetcafe.ir',
-
+  output: "static",
+  adapter: node({
+    mode: 'standalone',
+  }),
   integrations: [
     tailwind({
       applyBaseStyles: false,
@@ -85,15 +88,12 @@ export default defineConfig({
   },
 
   server: {
-    port: 1234,
+    port: 4321,
     host: true,
   },
 
   devToolbar: {
     enabled: false,
   },
-  output: "static",
-  adapter: node({
-    mode: 'standalone',
-  }),
+  
 })

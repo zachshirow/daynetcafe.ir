@@ -43,7 +43,8 @@ export const server = {
         // 2. send the data as a message to BALE group.
         const baleToken = import.meta.env.BALE_TOKEN || process.env.BALE_TOKEN
         
-        const baleRequest = await axios({
+        //bale request
+        await axios({
           method: "POST",
           url: `https://tapi.bale.ai/bot151681912:${baleToken}/sendMessage`,
           headers: {

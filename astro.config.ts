@@ -28,6 +28,14 @@ import node from '@astrojs/node';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://daynetcafe.ir',
+  vite: {
+    server: {
+      allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
+    },
+    preview: {
+      allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
+    },
+  },
   output: "static",
   adapter: node({
     mode: 'standalone',

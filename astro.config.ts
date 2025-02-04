@@ -36,6 +36,10 @@ export default defineConfig({
       allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
     },
   },
+  image: {
+    // Example: Allow remote image optimization from a single domain
+    domains: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'gravatar.com'],
+  },
   output: "static",
   adapter: node({
     mode: 'standalone',

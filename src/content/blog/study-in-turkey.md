@@ -5,7 +5,7 @@ description: در این مقاله به تفصیل به جزئیات تحصیل
 date: 2025-02-03
 tags: 
 - وبلاگ
-# image: "../media/"
+image: "https://daynetcafe.storage.iran.liara.space/media/public/file-over-app.png"
 authors: 
 - zachshirow
 ---

@@ -6,6 +6,7 @@ description: در این مقاله فقط در مورد آزمون یوس تر�
 date: 2025-02-01
 tags:
   - وبلاگ
+image: https://files.daynetcafe.ir/media/public/yos-exam.jpeg
 authors:
   - zachshirow
   - hemra

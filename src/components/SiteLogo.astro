@@ -1,9 +1,6 @@
 ---
 import Link from '@/components/Link.astro'
-import { 
-        // Image,
-     Picture } from 'astro:assets'
-import logo from '../../public/static/logo.svg'
+import { Image } from 'astro:assets'
 import { 
     // NAV_LINKS, 
     SITE } from '@/consts'
@@ -14,6 +11,6 @@ import {
 href="/"
 class="flex flex-shrink-0 items-center gap-2 text-xl font-semibold transition-colors duration-300 hover:text-primary no-underline justify-center"
 >
-<Picture src={logo} alt="Logo" class="size-8 dark:invert" />
+<Image src={"/static/logo.svg"} width={70} height={70} alt="Logo" class="size-8 dark:invert" />
 {SITE.TITLE}
 </Link>

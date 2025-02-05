@@ -38,8 +38,8 @@ export default defineConfig({
   },
   image: {
     // Example: Allow remote image optimization from a single domain
-    service: passthroughImageService(), 
-    domains: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'gravatar.com'],
+    // service: passthroughImageService(), 
+    domains: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'gravatar.com', 'files.daynetcafe.ir'],
   },
   output: "static",
   adapter: node({

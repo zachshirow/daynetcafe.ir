@@ -8,7 +8,7 @@ description: "ما در کافی نت دی کلیه خدمات مربوط به �
 date: 2025-02-02
 tags: 
 - خدمت
-# image: "../media/"
+image:  https://files.daynetcafe.ir/media/public/2502050942.jpg
 authors: 
 - zachshirow
 - hemra

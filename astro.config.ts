@@ -21,28 +21,28 @@ import rehypeAstroRelativeMarkdownLinks from "astro-rehype-relative-markdown-lin
 import remarkLinkCard from 'remark-link-card-plus';
 
 import icon from 'astro-icon'
-import node from '@astrojs/node';
+import nodejs from '@astrojs/node';
 
 
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://daynetcafe.ir',
-  vite: {
-    server: {
-      allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
-    },
-    preview: {
-      allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
-    },
-  },
+  // vite: {
+  //   server: {
+  //     allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
+  //   },
+  //   preview: {
+  //     allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
+  //   },
+  // },
   image: {
     // Example: Allow remote image optimization from a single domain
     // service: passthroughImageService(), 
     domains: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'gravatar.com', 'files.daynetcafe.ir'],
   },
   output: "static",
-  adapter: node({
+  adapter: nodejs({
     mode: 'standalone',
   }),
   integrations: [

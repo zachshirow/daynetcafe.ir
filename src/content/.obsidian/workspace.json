@@ -27,9 +27,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/bahmanmotor-haval-bahman18.md",
+                "file": "blog/bahmanmotor-haval-bahman18.mdx",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "bahmanmotor-haval-bahman18"
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/bahmanmotor-haval-bahman18.md",
+                "file": "blog/bahmanmotor-haval-bahman18.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
   "active": "4f916dfef6cc902f",
   "lastOpenFiles": [
     "blog/iran-khodro-fajr-1403.mdx",
-    "blog/bahmanmotor-haval-bahman18.md",
+    "blog/bahmanmotor-haval-bahman18.mdx",
     "services/car-signup.md",
     "blog/iran-khodro-day-23.md",
     "blog/iran-khodro-day-23/irankhodro.webp",

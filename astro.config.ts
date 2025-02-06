@@ -21,7 +21,7 @@ import rehypeAstroRelativeMarkdownLinks from "astro-rehype-relative-markdown-lin
 import remarkLinkCard from 'remark-link-card-plus';
 
 import icon from 'astro-icon'
-// import node from '@astrojs/node';
+import node from '@astrojs/node';
 
 
 

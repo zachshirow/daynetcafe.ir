@@ -15,7 +15,6 @@ import { type CollectionEntry, getCollection, render } from 'astro:content'
 import { components } from "@/mixins/autoImportComponents"
 // import Backlinks from '@/components/Backlinks.astro'
 
-export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = (await getCollection('blog'))

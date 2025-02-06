@@ -25,7 +25,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { components } from "@/mixins/autoImportComponents"
 // import Backlinks from '@/components/Backlinks.astro'
 
-export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = (await getCollection('services'))

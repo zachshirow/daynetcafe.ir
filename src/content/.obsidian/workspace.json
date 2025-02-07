@@ -35,8 +35,7 @@
               "title": "bahmanmotor-haval-bahman18"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/bahmanmotor-haval-bahman18.mdx",
+                "file": "blog/iran-khodro-fajr-1403.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for bahmanmotor-haval-bahman18"
+              "title": "Backlinks for iran-khodro-fajr-1403"
             }
           },
           {
@@ -179,10 +178,10 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "4f916dfef6cc902f",
+  "active": "f82650f1ef58dec9",
   "lastOpenFiles": [
-    "blog/iran-khodro-fajr-1403.mdx",
     "blog/bahmanmotor-haval-bahman18.mdx",
+    "blog/iran-khodro-fajr-1403.mdx",
     "services/car-signup.md",
     "blog/iran-khodro-day-23.md",
     "blog/iran-khodro-day-23/irankhodro.webp",

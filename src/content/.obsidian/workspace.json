@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/about-sat-exam.md",
+                "file": "blog/iran-khodro-fajr-1403.mdx",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "about-sat-exam"
+              "title": "iran-khodro-fajr-1403"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/about-sat-exam.md",
+                "file": "blog/iran-khodro-fajr-1403.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for about-sat-exam"
+              "title": "Backlinks for iran-khodro-fajr-1403"
             }
           },
           {
@@ -166,6 +166,7 @@
   },
   "active": "4f916dfef6cc902f",
   "lastOpenFiles": [
+    "blog/about-sat-exam.md",
     "blog/about-tomer-exam.md",
     "blog/about-yos-exam.md",
     "blog/bahmanmotor-haval-bahman18.mdx",
@@ -186,7 +187,6 @@
     "media/dena-plus-automatic.jpg",
     "services/car-signup.md",
     "blog/iran-khodro-day-23/irankhodro.webp",
-    "blog/about-sat-exam.md",
     "services/yos-signup.mdx",
     "templates/image.md",
     "services/haj-signup.md",

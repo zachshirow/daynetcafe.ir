@@ -28,14 +28,14 @@ import nodejs from '@astrojs/node';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://daynetcafe.ir',
-  // vite: {
-  //   server: {
-  //     allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
-  //   },
-  //   preview: {
-  //     allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
-  //   },
-  // },
+  vite: {
+    server: {
+      allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
+    },
+    preview: {
+      allowedHosts: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'localhost'],
+    },
+  },
   image: {
     // Example: Allow remote image optimization from a single domain
     // service: passthroughImageService(), 

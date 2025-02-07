@@ -9,8 +9,11 @@ import { getCollection } from 'astro:content'
 
 
 const blog = (await getCollection('blog')).filter((post) => !post.data.draft)
+const services = (await getCollection('services')).filter((post) => !post.data.draft)
 
-const tagCounts = blog.reduce((acc, post) => {
+const content = [...blog, ...services]
+
+const tagCounts = content.reduce((acc, post) => {
   post.data.tags?.forEach((tag) => {
     acc.set(tag, (acc.get(tag) || 0) + 1)
   })

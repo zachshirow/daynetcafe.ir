@@ -21,7 +21,7 @@ import rehypeAstroRelativeMarkdownLinks from "astro-rehype-relative-markdown-lin
 import remarkLinkCard from 'remark-link-card-plus';
 
 import icon from 'astro-icon'
-import nodejs from '@astrojs/node';
+// import nodejs from '@astrojs/node';
 
 
 
@@ -41,10 +41,10 @@ export default defineConfig({
     // service: passthroughImageService(), 
     domains: ['daynetcafeir.liara.run', 'daynetcafe.ir', 'gravatar.com', 'files.daynetcafe.ir'],
   },
-  output: "static",
-  adapter: nodejs({
-    mode: 'standalone',
-  }),
+  // output: "static",
+  // adapter: nodejs({
+  //   mode: 'standalone',
+  // }),
   integrations: [
     tailwind({
       applyBaseStyles: false,

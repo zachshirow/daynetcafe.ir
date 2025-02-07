@@ -1,8 +1,6 @@
 {
-    "app": "daynetcafeir",
+    "app": "day-static",
     "port": 1234,
-    "build": {
-        "location": "iran"
-    },
-    "disks": []
+    "platform": "static",
+    "path": "./dist"
 }

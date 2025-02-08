@@ -1,12 +1,12 @@
 ---
-postid: 
+postid: {{time}}
 aliases: 
 - 
 description: ""
 date: {{date}}
 tags: 
 - وبلاگ
-image: "https://files.daynetcafe.ir/media/public/"
+image: 
 authors: 
 - zachshirow
 - hemra

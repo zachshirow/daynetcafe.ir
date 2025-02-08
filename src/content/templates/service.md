@@ -5,7 +5,7 @@ description: ""
 date: {{date}}
 tags: 
 - خدمت
-image: "../media/"
+image: 
 authors: 
 - zachshirow
 - hemra

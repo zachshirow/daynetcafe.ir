@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/iran-khodro-fajr-1403.mdx",
+                "file": "blog/daynetcafe-backlinks.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "iran-khodro-fajr-1403"
+              "title": "daynetcafe-backlinks"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/iran-khodro-fajr-1403.mdx",
+                "file": "blog/daynetcafe-backlinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for iran-khodro-fajr-1403"
+              "title": "Backlinks for daynetcafe-backlinks"
             }
           },
           {
@@ -166,13 +166,17 @@
   },
   "active": "4f916dfef6cc902f",
   "lastOpenFiles": [
+    "templates/service.md",
+    "templates/post.md",
+    "blog/daynetcafe-backlinks.md",
+    "media/daynetcafe-backlinks.jpg",
+    "blog/iran-khodro-fajr-1403.mdx",
     "blog/about-sat-exam.md",
     "blog/about-tomer-exam.md",
     "blog/about-yos-exam.md",
     "blog/bahmanmotor-haval-bahman18.mdx",
     "blog/golestan-haj-karavans.mdx",
     "blog/iran-khodro-day-23.md",
-    "blog/iran-khodro-fajr-1403.mdx",
     "blog/istanbul-university.mdx",
     "blog/umra-latest-news.mdx",
     "blog/study-in-turkey.md",
@@ -190,7 +194,6 @@
     "services/yos-signup.mdx",
     "templates/image.md",
     "services/haj-signup.md",
-    "templates/post.md",
     "authors/zachshirow.md",
     "authors/hemra.md",
     "snippets/turkey-required-docs.md",
@@ -207,9 +210,6 @@
     "blog/obsidian-sharpen.mdx",
     "file-over-app.md",
     "services/print.md",
-    "templates/service.md",
-    "media/hp-laserjet.jpg",
-    "projects/project-b.md",
-    "projects/project-c.md"
+    "projects/project-b.md"
   ]
 }

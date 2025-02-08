@@ -1,14 +1,14 @@
 ---
 postid: 2502050940
-aliases: 
-- سیرتاپیاز آزمون SAT
-description: "در این مقاله به صورت دقیق به جزئیات آزمون SAT می پردازیم."
+aliases:
+  - همه چیز در مورد آزمون اس‌ای‌تی (SAT)
+description: در این مقاله به صورت دقیق به جزئیات آزمون SAT می پردازیم.
 date: 2025-02-03
-tags: 
-- وبلاگ
+tags:
+  - وبلاگ
 image: https://files.daynetcafe.ir/media/public/sat-exam.webp
-authors: 
-- zachshirow
+authors:
+  - zachshirow
 ---
 
 ## معرفی آزمون

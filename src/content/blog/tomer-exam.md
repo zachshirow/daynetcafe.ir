@@ -3,7 +3,7 @@ aliases:
   - همه چیز در مورد آزمون تومر
 description: در این پست به جزئیات آزمون تومر ترکیه خواهیم پرداخت
 date: 2025-02-03
-image: https://files.daynetcafe.ir/media/public/tomer-exam-diarylan.jpg
+image: ../media/tomer-exam.jpg
 tags:
   - وبلاگ
 authors:

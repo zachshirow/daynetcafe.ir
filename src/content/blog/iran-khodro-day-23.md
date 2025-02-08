@@ -1,16 +1,15 @@
 ---
-aliases: 
-- ثبت نام جدید ایران خودرو 23 دی ماه 1403
-description: 'شرایط جدید فروش ایران خودرو اعلام شده در 23 دی ماه در طرح های  پیش فروش و فروش فوق‌العاده'
+aliases:
+  - ثبت نام جدید ایران خودرو 23 دی ماه 1403
+description: شرایط جدید فروش ایران خودرو اعلام شده در 23 دی ماه در طرح های  پیش فروش و فروش فوق‌العاده
 date: 2025-01-14
-tags: 
-- ایرانخودرو
-- ثبتنام_ماشین
-image: 'https://files.daynetcafe.ir/media/public/irankhodro.webp'
-authors: 
-- zachshirow
+tags:
+  - ایرانخودرو
+  - ثبتنام_ماشین
+image: ../media/iran-khodro-day-23.jpg
+authors:
+  - zachshirow
 ---
-
 
 ## متقاضیان این طرح فروش
 

@@ -6,10 +6,11 @@ description: در این مقاله به صورت دقیق به جزئیات آ�
 date: 2025-02-03
 tags:
   - وبلاگ
-image: https://files.daynetcafe.ir/media/public/sat-exam.webp
+image: ../media/sat-exam.jpg
 authors:
   - zachshirow
 ---
+
 
 ## معرفی آزمون
 
@@ -53,4 +54,5 @@ https://satsuite.collegeboard.org
 https://mcelroytutoring.com/blog-post.php?id=5138
 
 برای آمادگی بیشتر برای آزمون اس‌ای‌تی می‌توانید کتاب زیر را مطالعه کنید:
-[[The Official SAT Study Guide.pdf]]
+
+> [The Official SAT Study Guide](https://files.daynetcafe.ir/media/2501251401/The%20Official%20SAT%20Study%20Guide.pdf)

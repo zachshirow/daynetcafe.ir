@@ -2,16 +2,15 @@
 aliases:
   - همه چیز در مورد آزمون یوس ترکیه
   - آزمون یوس
-description: در این مقاله فقط در مورد آزمون یوس ترکیه خواهیم نوشت.
+description: در این مقاله به تمام اطلاعاتی که برای شرکت در آزمون یوس نیاز خواهید داشت می پردازیم.
 date: 2025-02-01
 tags:
   - وبلاگ
-image: https://files.daynetcafe.ir/media/public/yos-exam.jpeg
+image: ../media/yos-exam.jpg
 authors:
   - zachshirow
   - hemra
 ---
-
 
 ### معرفی آزمون یوس
 

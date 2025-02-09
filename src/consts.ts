@@ -8,6 +8,7 @@ export type Site = {
   SERVICES: number 
   CUSTOMERS: number
   PROJECTS: number
+  USDRATE: number
 }
 
 export type Link = {
@@ -36,7 +37,8 @@ export const SITE: Site = {
   SITEURL: 'https://daynetcafe.ir',
   SERVICES: 20, 
   CUSTOMERS: 152, 
-  PROJECTS: 206
+  PROJECTS: 206, 
+  USDRATE: 900000
 }
 
 export const NAV_LINKS: Link[] = [

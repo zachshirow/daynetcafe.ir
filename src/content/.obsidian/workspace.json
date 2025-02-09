@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "services/car-signup.md",
+                "file": "services/yos-signup.mdx",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "car-signup"
+              "title": "yos-signup"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "services/car-signup.md",
+                "file": "services/yos-signup.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for car-signup"
+              "title": "Backlinks for yos-signup"
             }
           },
           {
@@ -166,8 +166,9 @@
   },
   "active": "024b72721d159bee",
   "lastOpenFiles": [
-    "blog/iran-khodro-fajr-1403.mdx",
+    "templates/USDRateCalc.md",
     "services/car-signup.md",
+    "blog/iran-khodro-fajr-1403.mdx",
     "blog/bahmanmotor-haval-bahman18.mdx",
     "media/car-signup.jpg",
     "blog/writing-sop.md",

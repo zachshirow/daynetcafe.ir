@@ -1,0 +1,22 @@
+---
+import { SITE } from "@/consts";
+import { Card, CardContent } from "./ui/card";
+import {numberWithCommas} from "@/lib/utils"
+type Props = {
+    amount: number
+}
+
+const {amount}: Props = Astro.props
+
+
+---
+
+<Card>
+    <CardContent>
+        <div class="pt-5">
+            <p dir="ltr" class="text-center">
+                {amount} USD x {numberWithCommas(SITE.USDRATE)} IRR = <strong>{numberWithCommas(amount * SITE.USDRATE)} IRR</strong>
+            </p>
+        </div>
+    </CardContent>
+</Card>

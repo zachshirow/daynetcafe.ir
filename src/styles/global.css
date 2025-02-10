@@ -102,6 +102,8 @@ code, pre {
   article {
     @apply prose-headings:scroll-mt-20 prose-headings:break-words first:prose-headings:mt-0 prose-p:break-words prose-a:!break-words prose-a:!decoration-muted-foreground prose-a:underline-offset-[3px] prose-a:transition-colors hover:prose-a:!decoration-foreground prose-pre:!px-0 prose-img:mx-auto;
 
+    
+
     .katex-display {
       @apply overflow-x-auto overflow-y-hidden py-4;
     }
@@ -109,6 +111,13 @@ code, pre {
     /* Removes background from <mark> elements */
     mark {
       @apply bg-transparent;
+    }
+
+    .astro-grid ul, .astro-grid ol {
+      @apply grid grid-cols-2 md:grid-cols-3 gap-4 list-none pr-0
+    }
+    .astro-grid li {
+        @apply border h-auto max-w-full rounded-xl py-5 text-center list-none
     }
 
     /* Blanket syntax highlighting */

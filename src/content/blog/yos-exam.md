@@ -73,6 +73,6 @@ https://play.google.com/store/apps/details?id=tr.gov.osym.ais.android&hl=en&pli=
 
 کافی نت دی، ارائه دهنده خدمت ثبت نام در آزمون یوس می باشد. در لینک زیر می توانید اطلاعات مربوطه را مشاهده کنید.
 
-[ثبت نام در آزمون یوس](../services/yos-signup.md)
+[ثبت نام در آزمون یوس](../services/yos-signup.mdx)
 
 <BlogCardLink id="" />

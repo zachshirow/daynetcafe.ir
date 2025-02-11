@@ -19,9 +19,9 @@ import {numberWithCommas} from "@/lib/utils"
 // import LeadForm from "@/components/LeadForm.astro"
 
 // import BlogCard from "@/components/BlogCard.astro"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
+// import { Input } from "@/components/ui/input"
+// import { Label } from "@/components/ui/label"
+// import { Textarea } from "@/components/ui/textarea"
 import { components } from "@/mixins/autoImportComponents"
 // import Backlinks from '@/components/Backlinks.astro'
 
@@ -75,7 +75,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
 <Layout
   title={post.data.aliases[0]}
   description={post.data.description}
-  image={post.data.image?.src ?? '/static/1200x630.png'}
+  image={post.data.image?.src ?? '/static/daynetcafe.png'}
 >
   <section
     class="grid grid-cols-[minmax(0px,1fr)_min(768px,100%)_minmax(0px,1fr)] gap-y-6 *:px-4"

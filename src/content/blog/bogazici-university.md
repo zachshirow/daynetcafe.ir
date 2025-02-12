@@ -6,12 +6,11 @@ description: دانشگاه بغازیچی ترکیه یکی از دانشگاه
 date: 2025-02-13
 tags:
   - وبلاگ
-image: ../media/bogazici.jpg
+image: ../media/bogazici-university.jpg
 authors:
   - zachshirow
   - hemra
 ---
-
 دانشگاه بغازیچی ترکیه یکی از دانشگاه های ترکیه است که می تواند دانشگاه منتخب شما برای ادامه تحصیلات تان در این کشور باشد. 
 
 ## معرفی دانشگاه بغازیچی ترکیه - Boğaziçi University
@@ -87,8 +86,21 @@ authors:
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.3309507304316!2d29.051764199999997!3d41.083615099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac9ff47fbad73%3A0xbd6495985c46cd0e!2zQm_En2F6acOnaSBVbml2ZXJzaXR5!5e0!3m2!1sen!2s!4v1739342046088!5m2!1sen!2s" class="aspect-video w-full rounded-md mb-5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+---
+
 ## دیگر دانشگاه‌های ترکیه
 
 برای مشاهده لیست کامل دانشگاه های ترکیه می توانید به صفحه زیر مراجعه کنید. 
 
 [لیست کامل دانشگاه های ترکیه](turkiye-universities.mdx)
+
+
+---
+
+## ثبت نام در دانشگاه های ترکیه با کافی نت دی
+
+![](../media/turkiye-university-signup-banner.jpg)
+
+برای دریافت همه جزئیات مربوط به ثبت نام و تحصیل در دانشگاه های ترکیه، می توانید به صفحه زیر بروید و از خدمات کافی نت دی در این خصوص بهره مند شوید. 
+
+[ثبت نام در دانشگاه های ترکیه](../services/turkiye-university-signup.md)

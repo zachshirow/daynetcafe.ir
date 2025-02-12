@@ -1,0 +1,1 @@
+class="aspect-video w-full rounded-md mb-5"

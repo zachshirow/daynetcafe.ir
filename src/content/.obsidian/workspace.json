@@ -13,16 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/bogazici-university.md",
+                "file": "blog/istanbul-university.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bogazici-university"
+              "title": "istanbul-university"
             }
           },
           {
-            "id": "b1e5971902ec0cad",
+            "id": "38a8ba277813c443",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "services/turkiye-university-signup.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "turkiye-university-signup"
+            }
+          },
+          {
+            "id": "f7a165751ee2a8ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -109,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/turkiye-universities.mdx",
+                "file": "services/turkiye-university-signup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for turkiye-universities"
+              "title": "Backlinks for turkiye-university-signup"
             }
           },
           {
@@ -155,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/turkiye-universities.mdx",
+                "file": "services/turkiye-university-signup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of turkiye-universities"
+              "title": "Outline of turkiye-university-signup"
             }
           }
         ],
@@ -183,10 +197,16 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "b1e5971902ec0cad",
+  "active": "38a8ba277813c443",
   "lastOpenFiles": [
     "blog/bogazici-university.md",
+    "blog/istanbul-university.md",
+    "media/turkiye-university-signup-banner.jpg",
+    "media/istanbul-campus.jpg",
+    "media/istanbul-university.jpg",
     "blog/turkiye-universities.mdx",
+    "templates/map class.md",
+    "media/bogazici-university.jpg",
     "media/turkiye-universities.jpg",
     "media/bogazici-campus.jpg",
     "services/turkiye-university-signup.md",
@@ -199,15 +219,11 @@
     "media/ielts-exam.jpg",
     "blog/ankara.md",
     "blog/istanbul.md",
-    "media/bogazici.jpg",
-    "media/ankara.jpg",
-    "media/istanbul.jpg",
     "blog/zipcode-verification.md",
     "blog/traffic-plate-services-4-steps.md",
     "blog/umra-bahman-17.md",
     "blog/wedding-loan.md",
     "2025-02-12.md",
-    "media/umra-bahman-17.jpg",
     "احراز نشانی پست.md",
     "blog/baby-loan.md",
     "blog/national-housing.md",
@@ -222,7 +238,6 @@
     "blog/iran-khodro-fajr-1403.mdx",
     "blog/umra-latest-news.mdx",
     "services/haj-signup.md",
-    "blog/istanbul-university.md",
     "templates/astro column.md",
     "blog/bahmanmotor-haval-bahman18.mdx",
     "blog/file-over-app.mdx",

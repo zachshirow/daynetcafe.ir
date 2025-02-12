@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "9af50a14f4dc10fc",
+        "id": "aedd84a1a7c16d53",
         "type": "tabs",
         "children": [
           {
-            "id": "851b1c1e9ce6f827",
+            "id": "e6b6723c2280a1d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/traffic-plate-services-4-steps.md",
+                "file": "blog/bogazici-university.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "traffic-plate-services-4-steps"
+              "title": "bogazici-university"
+            }
+          },
+          {
+            "id": "b1e5971902ec0cad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/turkiye-universities.mdx",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "turkiye-universities"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/traffic-plate-services-4-steps.md",
+                "file": "blog/turkiye-universities.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for traffic-plate-services-4-steps"
+              "title": "Backlinks for turkiye-universities"
             }
           },
           {
@@ -140,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/traffic-plate-services-4-steps.md",
+                "file": "blog/turkiye-universities.mdx",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of traffic-plate-services-4-steps"
+              "title": "Outline of turkiye-universities"
             }
           }
         ],
@@ -168,49 +183,48 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "851b1c1e9ce6f827",
+  "active": "b1e5971902ec0cad",
   "lastOpenFiles": [
+    "blog/bogazici-university.md",
+    "blog/turkiye-universities.mdx",
+    "media/turkiye-universities.jpg",
+    "media/bogazici-campus.jpg",
+    "services/turkiye-university-signup.md",
+    "media/turkiye-university-signup 1.jpg",
+    "media/turkiye-university-signup.jpg",
+    "blog/sat-exam.md",
+    "blog/ielts-exam.md",
+    "blog/toefl-exam.md",
+    "media/toefl-exam.jpg",
+    "media/ielts-exam.jpg",
+    "blog/ankara.md",
+    "blog/istanbul.md",
+    "media/bogazici.jpg",
+    "media/ankara.jpg",
+    "media/istanbul.jpg",
+    "blog/zipcode-verification.md",
+    "blog/traffic-plate-services-4-steps.md",
     "blog/umra-bahman-17.md",
     "blog/wedding-loan.md",
-    "blog/zipcode-verification.md",
     "2025-02-12.md",
     "media/umra-bahman-17.jpg",
-    "blog/traffic-plate-services-4-steps.md",
-    "media/traffic-plate-services-4-steps.jpg",
     "احراز نشانی پست.md",
     "blog/baby-loan.md",
-    "media/baby-loan.jpg",
-    "media/zipcode-verification.jpg",
     "blog/national-housing.md",
-    "media/national-housing.jpg",
-    "media/wedding-loan.jpg",
     "services/yos-signup.mdx",
     "blog/economic-id.md",
     "blog/sejam-signup-guide.md",
     "blog/vam-vadie-maskan.md",
-    "media/vam-vadie-maskan.jpg",
-    "media/sejam-signup-guide.jpg",
-    "media/economic-id.jpg",
     "authors/zachshirow.md",
     "authors/hemra.md",
     "blog/karavan-tamato-1404.md",
-    "media/karavan-tamato-1404.jpg",
     "blog/golestan-haj-karavans.mdx",
     "blog/iran-khodro-fajr-1403.mdx",
     "blog/umra-latest-news.mdx",
     "services/haj-signup.md",
     "blog/istanbul-university.md",
     "templates/astro column.md",
-    "blog/iran-khodro-day-23.md",
-    "blog/yos-exam.md",
-    "blog/sat-exam.md",
     "blog/bahmanmotor-haval-bahman18.mdx",
-    "blog/haval-h6-mistake.md",
-    "templates/USDRateCalc.md",
-    "services/car-signup.md",
-    "blog/writing-sop.md",
-    "services/print.md",
-    "blog/daynetcafe-changelog.md",
     "blog/file-over-app.mdx",
     "snippets",
     "blog/obsidian-about.mdx",

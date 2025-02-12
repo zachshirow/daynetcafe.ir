@@ -140,13 +140,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/obsidian-about.mdx"
+                "file": "blog/traffic-plate-services-4-steps.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of obsidian-about"
+              "title": "Outline of traffic-plate-services-4-steps"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -166,14 +170,17 @@
   },
   "active": "851b1c1e9ce6f827",
   "lastOpenFiles": [
-    "media/traffic-plate-services-4-steps.jpg",
+    "blog/umra-bahman-17.md",
+    "blog/wedding-loan.md",
     "blog/zipcode-verification.md",
+    "2025-02-12.md",
+    "media/umra-bahman-17.jpg",
     "blog/traffic-plate-services-4-steps.md",
+    "media/traffic-plate-services-4-steps.jpg",
     "احراز نشانی پست.md",
     "blog/baby-loan.md",
     "media/baby-loan.jpg",
     "media/zipcode-verification.jpg",
-    "blog/wedding-loan.md",
     "blog/national-housing.md",
     "media/national-housing.jpg",
     "media/wedding-loan.jpg",
@@ -199,14 +206,11 @@
     "blog/sat-exam.md",
     "blog/bahmanmotor-haval-bahman18.mdx",
     "blog/haval-h6-mistake.md",
-    "media/haval-h6-mistake.jpg",
     "templates/USDRateCalc.md",
     "services/car-signup.md",
-    "media/car-signup.jpg",
     "blog/writing-sop.md",
     "services/print.md",
     "blog/daynetcafe-changelog.md",
-    "blog/daynetcafe-backlinks.md",
     "blog/file-over-app.mdx",
     "snippets",
     "blog/obsidian-about.mdx",

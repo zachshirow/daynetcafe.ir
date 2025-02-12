@@ -36,8 +36,8 @@ export const SITE: Site = {
   POSTS_PER_PAGE: 5,
   SITEURL: 'https://daynetcafe.ir',
   SERVICES: 20, 
-  CUSTOMERS: 152, 
-  PROJECTS: 206, 
+  CUSTOMERS: 159, 
+  PROJECTS: 214, 
   USDRATE: 900000
 }
 

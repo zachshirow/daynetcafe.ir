@@ -182,10 +182,10 @@ const authors = await parseAuthors(post.data.authors ?? [])
                 } ریال</h2>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                  <!-- <Button variant="default" size={'lg'}> <a class="not-prose" href={`#lead`} title="ثبت درخواست">ثبت درخواست</a> </Button> -->
+                  <Button variant="default" size={'lg'}> <a class="not-prose" href={`#lead`} title="ثبت درخواست">ثبت درخواست</a> </Button>
                   <!-- <Button variant={"default"} size={'lg'}> <a class="not-prose" href={`tel:+989037371958`} title="تماس با ما">ثبت درخواست</a> </Button> -->
                   <!-- <Button variant={"default"} size={'lg'}> <a class="not-prose" href={`tel:+989037371958`} title="تماس با ما">0903-737-1958</a> </Button> -->
-                  <Button variant="default" size={'lg'}> <a class="not-prose" href={`https://baserow.io/form/0XC-5e9IEx-wJKb88E9eOil5AIOTzG-UE-CoIiSTvCA?hide_url&prefill_url=${Astro.url.href}`} title="ثبت درخواست">ثبت درخواست</a> </Button>
+                  <!-- <Button variant="default" size={'lg'}> <a class="not-prose" href={`https://baserow.io/form/0XC-5e9IEx-wJKb88E9eOil5AIOTzG-UE-CoIiSTvCA?hide_url&prefill_url=${Astro.url.href}`} title="ثبت درخواست">ثبت درخواست</a> </Button> -->
                   
                 
                 </div>
@@ -230,6 +230,18 @@ const authors = await parseAuthors(post.data.authors ?? [])
             </div>
         </CardContent>
       </Card> -->
+
+      <Card className="mb-10">
+        <CardContent>
+            <div class="pt-8">
+              <div><h2 id="lead">فرم ثبت درخواست</h2></div>
+             <p>برای دریافت این خدمت از کافی نت دی، لطفا فرم زیر را پر کنید.</p>
+             <iframe src={`https://baserow.io/form/0XC-5e9IEx-wJKb88E9eOil5AIOTzG-UE-CoIiSTvCA?hide_url&prefill_url=${Astro.url.href}`} class="aspect-video w-full h-96 rounded-md mb-5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            </div>
+        </CardContent>
+      </Card>
     </article>
 
     <!-- <PostNavigation prevPost={prevPost} nextPost={nextPost} /> -->
@@ -274,7 +286,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
           )
         })
       }
-    
+      
     
       // const form = document.querySelector('form');
 

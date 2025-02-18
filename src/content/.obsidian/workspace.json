@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/pasargad-gold.md",
+                "file": "blog/bogazici-university.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pasargad-gold"
+              "title": "bogazici-university"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "iframe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/pasargad-gold.md",
+                "file": "blog/bogazici-university.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of pasargad-gold"
+              "title": "Outline of bogazici-university"
             }
           }
         ],
@@ -199,9 +200,9 @@
   },
   "active": "e3bc60e558f3d6b5",
   "lastOpenFiles": [
+    "blog/pasargad-gold.md",
     "media/pasargad-gold.jpg",
     "blog/istanbul-university.md",
-    "blog/pasargad-gold.md",
     "blog/istanbul-technical-university.md",
     "media/istanbul-technical-university-campus.jpg",
     "media/istanbul-technical-university.jpg",
@@ -218,7 +219,6 @@
     "media/turkiye-universities.jpg",
     "media/bogazici-campus.jpg",
     "media/turkiye-university-signup 1.jpg",
-    "media/turkiye-university-signup.jpg",
     "blog/sat-exam.md",
     "blog/ielts-exam.md",
     "blog/toefl-exam.md",

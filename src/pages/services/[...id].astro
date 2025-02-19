@@ -231,17 +231,15 @@ const authors = await parseAuthors(post.data.authors ?? [])
         </CardContent>
       </Card> -->
 
-      <Card className="mb-10">
-        <CardContent>
-            <div class="pt-8">
-              <div><h2 id="lead">فرم ثبت درخواست</h2></div>
-             <p>برای دریافت این خدمت از کافی نت دی، لطفا فرم زیر را پر کنید.</p>
-             <iframe src={`https://baserow.io/form/0XC-5e9IEx-wJKb88E9eOil5AIOTzG-UE-CoIiSTvCA?hide_url&prefill_url=${Astro.url.href}`} class="aspect-video w-full h-96 rounded-md mb-5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-            </div>
-        </CardContent>
-      </Card>
+      <div class="my-8">
+        <hr />
+          <div><h2 id="lead">فرم ثبت درخواست</h2></div>
+         <p>برای دریافت این خدمت از کافی نت دی، لطفا فرم زیر را پر کنید.</p>
+         <div class="h-full overflow-scroll">
+         <iframe src={`https://baserow.io/form/0XC-5e9IEx-wJKb88E9eOil5AIOTzG-UE-CoIiSTvCA?hide_url&prefill_url=${Astro.url.href}`} class="" width="100%" height="480px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        </div>
     </article>
 
     <!-- <PostNavigation prevPost={prevPost} nextPost={nextPost} /> -->

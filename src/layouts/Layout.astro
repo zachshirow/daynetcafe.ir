@@ -6,6 +6,7 @@ import { SITE } from '@/consts'
 import { Toaster } from "@/components/ui/toaster"
 import "../styles/global.css"
 import "../styles/index.css";
+import Newsletter from '@/components/Newsletter.astro'
 
 type Props = {
   title: string
@@ -34,6 +35,7 @@ const { title, description, image } = Astro.props
       <main class="flex-grow">
         <slot />
       </main>
+      <Newsletter />
       <Footer />
       <Toaster />
     </div>

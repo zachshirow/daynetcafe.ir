@@ -1,0 +1,30 @@
+---
+import { Input } from "./ui/input";
+import Container from '@/components/Container.astro'
+
+import {
+  Card,
+  CardContent,
+} from '@/components/ui/card'
+---
+    <div class="py-4">
+        <Container class="prose dark:prose-invert">
+        <Card>
+            
+            <CardContent>
+
+               <div>
+                <div>
+                    <h2>عضویت در خبرنامه</h2>
+                    <p>برای دریافت آخرین اخبار و مقاله ها از طریق ایمیل تان، می توانید در خبرنامه کافی نت دی عضو شوید.</p>
+                </div>
+                <form action="https://tally.so/r/nPGYJb" class="flex flex-row gap-x-5">
+                    <Input type="email" name="email" id="email" placeholder="ایمیل شما"/>
+                    <Input type="submit" value={"عضویت"} className="bg-black text-white dark:invert w-1/3" />
+                </form>
+               </div>
+
+            </CardContent>
+        </Card>
+    </Container>
+</div>

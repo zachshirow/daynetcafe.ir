@@ -36,9 +36,9 @@ export const SITE: Site = {
   POSTS_PER_PAGE: 5,
   SITEURL: 'https://daynetcafe.ir',
   SERVICES: 20, 
-  CUSTOMERS: 159, 
-  PROJECTS: 214, 
-  USDRATE: 900000
+  CUSTOMERS: 171, 
+  PROJECTS: 241, 
+  USDRATE: 950000
 }
 
 export const NAV_LINKS: Link[] = [

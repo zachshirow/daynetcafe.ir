@@ -11,10 +11,14 @@
             "id": "cc89e72edbda9bb4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "services/maps-business.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "maps-business"
             }
           }
         ]
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "services/maps-business.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of maps-business"
             }
           }
         ],
@@ -165,6 +170,7 @@
   },
   "active": "cc89e72edbda9bb4",
   "lastOpenFiles": [
+    "templates/map class.md",
     "blog/partner-viranet.md",
     "blog/zipcode-verification.md",
     "blog/motor-license.md",
@@ -200,7 +206,6 @@
     "blog/toefl-exam.md",
     "media/ielts-signup.jpg",
     "media/toefl-signup.jpg",
-    "blog/istanbul-university.md",
     "blog/turkiye-universities.mdx",
     "services/yos-signup.mdx",
     "blog/golestan-haj-karavans.mdx",

@@ -38,6 +38,7 @@
     "astro": "^5.2.3",
     "astro-embed": "^0.9.0",
     "astro-icon": "^1.1.4",
+    "astro-pagefind": "^1.8.0",
     "astro-rehype-relative-markdown-links": "^0.18.1",
     "axios": "^1.7.9",
     "bootstrap-icons": "^1.11.3",

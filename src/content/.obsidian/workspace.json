@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "177ee7b51d288b4e",
+        "id": "b6a7a10cdffb480b",
         "type": "tabs",
         "children": [
           {
-            "id": "6cdc898328ecaf87",
+            "id": "3f8ad4cf271e2728",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "services/kcex-signup.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "kcex-signup"
             }
           }
         ]
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "services/kcex-signup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of kcex-signup"
             }
           }
         ],
@@ -163,7 +168,7 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "6cdc898328ecaf87",
+  "active": "3f8ad4cf271e2728",
   "lastOpenFiles": [
     "blog/golestan-driving-schools.md",
     "blog/motor-license.md",

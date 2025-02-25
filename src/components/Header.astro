@@ -5,6 +5,10 @@ import MobileMenu from '@/components/ui/mobile-menu'
 import { ModeToggle } from '@/components/ui/mode-toggle'
 import { NAV_LINKS } from '@/consts'
 import SiteLogo from './SiteLogo.astro'
+import { Search } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+
+
 ---
 
 <header
@@ -29,6 +33,17 @@ import SiteLogo from './SiteLogo.astro'
         </nav>
         <MobileMenu client:load transition:persist />
         <ModeToggle client:load transition:persist />
+        <Button
+          variant="outline"
+          size="icon"
+          className="group"
+          title="جستجو"
+          id="magnifying-glass"
+          aria-label="جستجو"
+        >
+          <Search className="size-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <span class="sr-only">جستجو</span>
+        </Button>
       </div>
     </div>
   </Container>

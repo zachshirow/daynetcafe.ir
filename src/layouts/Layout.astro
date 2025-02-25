@@ -7,6 +7,9 @@ import { Toaster } from "@/components/ui/toaster"
 import "../styles/global.css"
 import "../styles/index.css";
 import Newsletter from '@/components/Newsletter.astro'
+import PageFind from '@/components/PageFind.astro'
+
+
 
 type Props = {
   title: string
@@ -39,6 +42,7 @@ const { title, description, image, newsletter = true } = Astro.props
       {newsletter && (<Newsletter />)}
       <Footer />
       <Toaster />
+      <PageFind />
     </div>
   </body>
 </html>

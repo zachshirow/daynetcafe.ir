@@ -22,6 +22,7 @@ import remarkLinkCard from 'remark-link-card-plus';
 
 import icon from 'astro-icon'
 // import nodejs from '@astrojs/node';
+import pagefind from "astro-pagefind";
 
 
 
@@ -53,6 +54,7 @@ export default defineConfig({
     mdx(),
     react(),
     icon(),
+    pagefind()
   ],
 
   markdown: {

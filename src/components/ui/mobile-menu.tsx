@@ -37,7 +37,7 @@ const MobileMenu = () => {
           title="Menu"
         >
           <Menu className="h-5 w-5" />
-          <span className="sr-only">Toggle menu</span>
+          <span className="sr-only">باز و بسته کردن منو</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-background">

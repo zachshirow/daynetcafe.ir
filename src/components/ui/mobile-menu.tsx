@@ -34,7 +34,7 @@ const MobileMenu = () => {
           variant="outline"
           size="icon"
           className="md:hidden"
-          title="Menu"
+          title="باز و بسته کردن منو"
         >
           <Menu className="h-5 w-5" />
           <span className="sr-only">باز و بسته کردن منو</span>

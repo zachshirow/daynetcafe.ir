@@ -13,15 +13,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "services/kcex-signup.md",
+                "file": "blog/yos-exam.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kcex-signup"
+              "title": "yos-exam"
+            }
+          },
+          {
+            "id": "c81667ea9dcc31bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/writing-sop.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "writing-sop"
+            }
+          },
+          {
+            "id": "0e5d29815d3be634",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/university-prof-paper-requirements.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "university-prof-paper-requirements"
+            }
+          },
+          {
+            "id": "db4c5f16acb32a24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/research-paper-process.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "research-paper-process"
+            }
+          },
+          {
+            "id": "7e319e2402552cbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/pasargad-life-insurance.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pasargad-life-insurance"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -140,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "services/kcex-signup.md",
+                "file": "blog/pasargad-life-insurance.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of kcex-signup"
+              "title": "Outline of pasargad-life-insurance"
             }
           }
         ],
@@ -168,12 +225,26 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "3f8ad4cf271e2728",
+  "active": "7e319e2402552cbf",
   "lastOpenFiles": [
+    "media/pasargad-life-insurance.jpg",
+    "blog/research-paper-process.md",
+    "blog/pasargad-life-insurance.md",
+    "blog/university-prof-paper-requirements.md",
+    "blog/writing-sop.md",
+    "media/research-paper-process.jpg",
+    "media/university-prof-paper-requirements.jpg",
+    "services/translation-services.md",
+    "blog/yos-exam.md",
+    "media/translation-services.jpg",
+    "services/kcex-signup.md",
+    "blog/daynetcafe-website-statistics.md",
+    "authors/hemra.md",
+    "authors/zachshirow.md",
+    "media/daynetcafe-website-analytics.jpg",
     "blog/golestan-driving-schools.md",
     "blog/motor-license.md",
     "blog/konkoor-1404.md",
-    "services/kcex-signup.md",
     "media/kcex-signup.jpg",
     "media/kcex-verification.jpg",
     "media/Pasted image 20250224104830.png",
@@ -191,20 +262,7 @@
     "services/toefl-signup.md",
     "services/print.md",
     "media/add-business-maps.jpg",
-    "media/motor-license-signup.jpg",
-    "media/golestan-driving-schools.jpg",
-    "media/motor-license.jpg",
-    "media/Screenshot 2025-01-22 135044.png",
-    "blog/yos-exam.md",
-    "blog/writing-sop.md",
     "blog/wedding-loan.md",
-    "blog/vam-vadie-maskan.md",
-    "products/obsidian-projects.md",
-    "projects/project-c.md",
-    "projects/project-a.md",
-    "projects/project-b.md",
-    "blog/umra-bahman-17.md",
-    "blog/umra-esfand-1.md",
     "blog/turkiye-universities.mdx",
     "services/yos-signup.mdx",
     "blog/golestan-haj-karavans.mdx",

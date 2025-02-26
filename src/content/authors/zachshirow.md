@@ -7,4 +7,6 @@ website: https://zachshirow.ir
 twitter: https://twitter.com/zachshirow
 github: https://github.com/zachshirow
 mail: zachshirow@gmail.com
+aliases:
+  - زکریا شیرمحمدلی
 ---

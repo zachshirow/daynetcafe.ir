@@ -7,4 +7,6 @@ website: http://localhost:1234/authors/hemra
 twitter: https://twitter.com/hemra42
 github: https://github.com/hemra42
 mail: hemra.sh42@gmail.com
+aliases:
+  - همرا شیرمحمدلی
 ---

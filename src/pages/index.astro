@@ -18,6 +18,7 @@ import Image from 'astro/components/Image.astro'
 import Authors from '@/components/Authors.astro'
 import daynetcafeOffice from "@/assets/daynetcafe_office.jpg"
 import daynetcafe from "../../public/static/daynetcafe.png"
+import Testimonials from '@/components/Testimonials.astro'
 
 const blog = (await getCollection('blog'))
   .filter((post) => !post.data.draft)
@@ -31,7 +32,7 @@ const blog = (await getCollection('blog'))
   <Container class="flex flex-col gap-y-6">
     <section>
       <Card>
-        <Image class=" rounded-lg" src={daynetcafeOffice} alt={SITE.TITLE} width={1920} height={1080} />
+        <Image class="rounded-lg" src={daynetcafeOffice} alt={SITE.TITLE} width={1920} height={1080} />
         <CardHeader>
           <CardTitle className="text-3xl">{SITE.TITLE}</CardTitle>
           <CardDescription
@@ -42,33 +43,46 @@ const blog = (await getCollection('blog'))
 
           <p> کافی نت دی واقع شده در روستای آق قایه شهرستان گنبد کاووس ارائه دهنده تمامی خدمات کافی نتی به شما مشتریان عزیز می باشد.</p>
 
-          <Button variant={'default'} className="btn-primary not-prose">
+          <Button variant={'default'} size={"lg"} className="btn-primary not-prose ml-2">
             <Link href="/services" title="خدمات ما">خدمات ما</Link>
           </Button>
-          <Button variant={'ghost'} className="btn-primary not-prose">
-            <Link href="/about" title="درباره ما">درباره ما</Link>
+          <Button variant={'outline'} size={"lg"} className="btn-primary not-prose">
+            <Link href="/about"  title="درباره ما">درباره ما</Link>
           </Button>
         </CardContent>
       </Card>
     </section>
-    <section class="flex flex-col gap-y-4">
+    <section class="flex flex-col gap-y-4 my-10">
+
       <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 list-none pr-0">
         <li class="border h-auto max-w-full rounded-xl py-5 px-2 text-center">
-          <h2 class="text-2xl font-bold">{SITE.SERVICES}</h2>
-          <p>تعداد خدمات مختلفی که در کافی نت دی ارائه می دهیم.</p>
+          <h2 class="text-3xl font-bold pb-5">{SITE.SERVICES}</h2>
+          <p>خدمات ارائه شده در کافی نت دی.</p>
         </li>
         <li class="border h-auto max-w-full rounded-xl py-5 px-2 text-center">
-          <h2 class="text-2xl font-bold">{SITE.CUSTOMERS}</h2>
-          <p>تعداد مشتریانی که به ما در انجام پروژه هایشان اعتماد کرده اند.</p>
+          <h2 class="text-3xl font-bold pb-5">{SITE.CUSTOMERS}</h2>
+          <p>مشتریانی که به ما اعتماد کرده اند.</p>
         </li>
         <li class="border h-auto max-w-full rounded-xl py-5 px-2 text-center">
-          <h2 class="text-2xl font-bold">{SITE.PROJECTS}</h2>
-          <p>تعداد پروژه هایی که در کافی نت دی انجام داده ایم.</p>
+          <h2 class="text-3xl font-bold pb-5">{SITE.PROJECTS}</h2>
+          <p>پروژه هایی که انجام داده ایم.</p>
         </li>
       </ul>
+      <div class="flex justify-center">
+        <Link
+          href="/blog/daynetcafe-changelog"
+          class={buttonVariants({ variant: 'ghost' }) + ' group'}
+        >
+        <span
+            class="ml-1.5 transition-transform group-hover:translate-x-1"
+            >&rarr;</span
+          >
+          آخرین تغییرات کافی نت دی
+        </Link>
+      </div>
     </section>
     <section class="flex flex-col gap-y-4">
-      <h2 class="text-2xl font-bold">جدیدترین پست ها</h2>
+      <h2 class="text-2xl font-bold">جدیدترین پست های کافی نت دی</h2>
       <ul class="not-prose flex flex-col gap-y-4">
         {
           blog.map((post) => (
@@ -93,10 +107,17 @@ const blog = (await getCollection('blog'))
     </section>
 
     <section class="flex flex-col gap-y-4">
-      <h2 class="text-2xl font-bold">تیم ما</h2>
-          <Authors />
+      <h2 class="text-2xl font-bold">تیم کافی نت دی</h2>
+      <Authors />
+      <Testimonials />
+      
+      
       <h2 class="text-2xl font-bold">کافی نت دی روی نقشه</h2>
+
+
+
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12701.042569983185!2d55.1486213!3d37.265246000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f82bf0033d338fd%3A0x6645a3b1d5380b42!2z2qnYp9mB24wg2YbYqiDYr9uM!5e0!3m2!1sen!2s!4v1736915832394!5m2!1sen!2s" class="aspect-video w-full rounded-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </section>
   </Container>
 </Layout>

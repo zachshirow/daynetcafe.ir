@@ -21,6 +21,14 @@ export type Locale = {
   langTag: string[];
 }
 
+export type REVIEW = {
+  name: string;
+  quote: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+  image?: string;
+  show: boolean;
+}
+
 
 export const LOCALE: Locale = {
   lang: "fa", // html lang code. Set this empty and default will be "en"

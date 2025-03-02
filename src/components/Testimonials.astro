@@ -1,0 +1,22 @@
+---
+
+import Review from "./Review.astro";
+import { reviews } from "@/reviews";
+
+
+
+---
+
+<div class="my-10">
+
+<h2 class="text-2xl font-bold">نظرات مشتریان کافی نت دی</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-5">
+    {
+        reviews.map(review => {
+            return <Review review={review} />
+        })
+    }
+</div>
+
+</div>

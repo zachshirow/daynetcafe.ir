@@ -10,4 +10,5 @@ image:
 authors: 
 - zachshirow
 - hemra
+direction: RTL
 ---

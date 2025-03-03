@@ -80,6 +80,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
 >
   <section
     class="grid grid-cols-[minmax(0px,1fr)_min(768px,100%)_minmax(0px,1fr)] gap-y-6 *:px-4"
+    dir={post.data.direction}
   >
     <Breadcrumbs
       items={[
@@ -169,7 +170,7 @@ const authors = await parseAuthors(post.data.authors ?? [])
       <!-- <PostNavigation prevPost={prevPost} nextPost={nextPost} /> -->
     </section>
 
-    {headings.length > 0 && <TableOfContents headings={headings} />}
+    {headings.length > 0 && <TableOfContents direction={post.data.direction} headings={headings} />}
 
     <article
       class="prose prose-neutral col-start-2 max-w-none dark:prose-invert"
@@ -178,12 +179,33 @@ const authors = await parseAuthors(post.data.authors ?? [])
           <CardContent>
               <div class="flex flex-col sm:flex-row text-center sm:text-right items-center gap-x-2 justify-between pt-8">
                 <div>
-                  <h2> <span class="text-sm font-light">شروع قیمت از: </span> <br /> {
-                  post.data.price && numberWithCommas(post.data.price)
-                } ریال</h2>
+                  {
+                    !post.data.direction && (
+                    <h2> 
+                              <span class="text-sm font-light">شروع قیمت از: </span> <br /> {
+                                post.data.price && numberWithCommas(post.data.price)
+                              } ریال
+                          </h2>
+                    )
+                  }
+                 {
+                  post.data.direction == "LTR" && (
+                  <h2> 
+                    <br /> ${
+                      post.data.price && numberWithCommas(post.data.price)
+                    }
+                 </h2>
+                  )
+                 }
                 </div>
                 <div class="flex flex-col gap-y-2">
-                  <Button variant="default" size={'lg'}> <a class="not-prose" href={`#lead`} title="ثبت درخواست">ثبت درخواست</a> </Button>
+                  {
+                    !post.data.direction && <Button variant="default" size={'lg'}> <a class="not-prose" href={`#lead`} title="ثبت درخواست">ثبت درخواست</a> </Button>
+                  }
+
+                  {
+                    post.data.direction == "LTR" && <Button variant="default" size={'lg'}> <a class="not-prose" href={`#lead`} title="Request Service">Request Service</a> </Button>
+                  }
                   <!-- <Button variant={"default"} size={'lg'}> <a class="not-prose" href={`tel:+989037371958`} title="تماس با ما">ثبت درخواست</a> </Button> -->
                   <!-- <Button variant={"default"} size={'lg'}> <a class="not-prose" href={`tel:+989037371958`} title="تماس با ما">0903-737-1958</a> </Button> -->
                   <!-- <Button variant="default" size={'lg'}> <a class="not-prose" href={`https://baserow.io/form/0XC-5e9IEx-wJKb88E9eOil5AIOTzG-UE-CoIiSTvCA?hide_url&prefill_url=${Astro.url.href}`} title="ثبت درخواست">ثبت درخواست</a> </Button> -->
@@ -197,14 +219,31 @@ const authors = await parseAuthors(post.data.authors ?? [])
         <Content components={components} />
 
       <div class="my-8">
-        <hr />
-          <div><h2 id="lead">فرم ثبت درخواست</h2></div>
-         <p>برای دریافت این خدمت از کافی نت دی، لطفا فرم زیر را پر کنید.</p>
-         <div class="h-full">
+          <hr />
+
+        {
+          !post.data.direction && 
+          <div><h2 id="lead">فرم ثبت درخواست</h2></div> 
+          <p>برای دریافت این خدمت از کافی نت دی، لطفا فرم زیر را پر کنید.</p>
          
-          <TallyForm url={Astro.url.href} client:load />
+          <div class="h-full">
+          <TallyForm formUrl="https://tally.so/embed/n0D7BA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&service=" url={Astro.url.href} client:load />
+          </div>
+        }
+
+          {
+            post.data.direction == "LTR" && 
+            <div><h2 id="lead">Service Request form</h2></div> 
+            <p>To receive this particular service from us, please fill out this form.</p>
           
-        </div>
+            <div class="h-full">
+            <TallyForm formUrl="https://tally.so/embed/3X2Z4L?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&service=" url={Astro.url.href} client:load />
+            </div>
+          }
+
+
+
+
         </div>
     </article>
 

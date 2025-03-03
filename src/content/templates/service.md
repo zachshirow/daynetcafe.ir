@@ -10,4 +10,5 @@ authors:
 - zachshirow
 - hemra
 price: 
+direction: RTL
 ---

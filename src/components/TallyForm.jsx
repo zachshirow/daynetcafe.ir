@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const TallyForm = ({url}) => {
+const TallyForm = ({formUrl, url}) => {
 	// The code below will load the embed
 	useEffect(() => {
 		const widgetScriptSrc = 'https://tally.so/widgets/embed.js';
@@ -40,7 +40,7 @@ const TallyForm = ({url}) => {
   return (
     <div>
 			<iframe
-        data-tally-src={`https://tally.so/embed/n0D7BA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&service=${url}`}
+        data-tally-src={`${formUrl}${url}`}
         loading="lazy"
         width="100%"
         height="216"

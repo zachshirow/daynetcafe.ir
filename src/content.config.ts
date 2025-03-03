@@ -17,6 +17,7 @@ const blog = defineCollection({
       tags: z.array(z.string()).optional(),
       authors: z.array(z.string()).optional(),
       draft: z.boolean().optional(),
+      direction: z.string().optional()
     }),
 })
 
@@ -45,7 +46,8 @@ const services = defineCollection({
       tags: z.array(z.string()).optional(),
       authors: z.array(z.string()).optional(),
       draft: z.boolean().optional(),
-      price: z.number().optional()
+      price: z.number().optional(),
+      direction: z.string().optional()
     }),
 })
 

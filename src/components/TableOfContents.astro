@@ -10,7 +10,7 @@ export interface Heading {
   subheadings: Heading[]
 }
 
-const { headings, direction } = Astro.props
+const { headings } = Astro.props
 const toc = buildToc(headings)
 
 function buildToc(headings: Heading[]): Heading[] {

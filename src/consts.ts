@@ -43,9 +43,9 @@ export const SITE: Site = {
   NUM_POSTS_ON_HOMEPAGE: 5,
   POSTS_PER_PAGE: 5,
   SITEURL: 'https://daynetcafe.ir',
-  SERVICES: 12, 
-  CUSTOMERS: 181, 
-  PROJECTS: 263, 
+  SERVICES: 13, 
+  CUSTOMERS: 213, 
+  PROJECTS: 298, 
   USDRATE: 950000
 }
 

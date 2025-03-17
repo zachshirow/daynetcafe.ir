@@ -11,10 +11,28 @@
             "id": "591672a3efafd7c4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "blog/golestan-driving-schools.mdx",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "golestan-driving-schools"
+            }
+          },
+          {
+            "id": "6cdbae9424a9aadd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/motor-license.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "motor-license"
             }
           }
         ]
@@ -136,12 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "blog/golestan-driving-schools.mdx",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of golestan-driving-schools"
             }
           }
         ],
@@ -163,8 +182,12 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "591672a3efafd7c4",
+  "active": "3863d2e7a583ad18",
   "lastOpenFiles": [
+    "blog/motor-license.md",
+    "blog/golestan-driving-schools.mdx",
+    "media/golestan-driving-schools.jpg",
+    "media/golestan-driving-schools 1.jpg",
     "services/kcex-signup.md",
     "services/haj-signup.md",
     "blog/iran-khodro-fajr-1403.mdx",
@@ -191,18 +214,13 @@
     "media/golestan-car-driving-schools.jpg",
     "media/golestan-motor-driving-schools.jpg",
     "services/motor-license-signup.md",
-    "media/motor-license-gonbad.jpg",
-    "blog/motor-license.md",
     "blog/daynetcafe-changelog.md",
     "blog/daynetcafe-website-statistics.md",
-    "media/daynetcafe-website-analytics.jpg",
     "blog/yos-exam.md",
     "blog/writing-sop.md",
     "blog/university-prof-paper-requirements.md",
     "blog/research-paper-process.md",
     "blog/pasargad-life-insurance.md",
-    "blog/research-thesis-dissertation-difference.md",
-    "authors/hemra.md",
     "blog/turkiye-universities.mdx",
     "services/yos-signup.mdx",
     "blog/golestan-haj-karavans.mdx",

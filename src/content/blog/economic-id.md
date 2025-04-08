@@ -6,6 +6,7 @@ description: در این مقاله، به تعریف کد اقتصادی، شر
 date: 2025-02-11
 tags:
   - وبلاگ
+  - مالیات
 image: ../media/economic-id.jpg
 authors:
   - zachshirow

@@ -6,6 +6,8 @@ description: داشتن بیمه عمر یکی از بهترین راهکاره�
 date: 2025-02-26
 tags:
   - وبلاگ
+  - بیمه
+  - پاسارگاد
 image: ../media/pasargad-life-insurance.jpg
 authors:
   - zachshirow

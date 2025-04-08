@@ -6,6 +6,9 @@ description: دانشگاه بغازیچی ترکیه یکی از دانشگاه
 date: 2025-02-13
 tags:
   - وبلاگ
+  - دانشگاه
+  - ترکیه
+  - دانشگاه_ترکیه
 image: ../media/bogazici-university.jpg
 authors:
   - zachshirow

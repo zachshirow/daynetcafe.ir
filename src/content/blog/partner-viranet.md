@@ -7,6 +7,7 @@ date: 2025-02-21
 tags:
   - وبلاگ
   - همکار
+  - کافی_نت
 image: ../media/partner-vira.jpg
 authors:
   - zachshirow

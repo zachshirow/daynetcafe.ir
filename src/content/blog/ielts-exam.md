@@ -7,6 +7,9 @@ description: در این مقاله به معرفی آزمون آیلتس می �
 date: 2025-02-12
 tags:
   - وبلاگ
+  - ثبتنام
+  - آزمون
+  - آیلتس
 image: ../media/ielts-exam.jpg
 authors:
   - zachshirow

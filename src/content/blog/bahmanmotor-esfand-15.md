@@ -6,6 +6,8 @@ description: شرایط فروش و پیش ثبت نام نقدی خودروها
 date: 2025-03-05
 tags:
   - وبلاگ
+  - ثبتنام_خودرو
+  - بهمن_موتور
 image: ../media/bahmanmotor-esfand-15.jpg
 authors:
   - zachshirow

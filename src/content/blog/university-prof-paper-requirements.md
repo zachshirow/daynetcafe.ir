@@ -6,6 +6,9 @@ description: راهنمای کلی تعداد مقاله های پژوهشی ک�
 date: 2025-02-26
 tags:
   - وبلاگ
+  - نوشتن
+  - مقاله
+  - تحقیق
 image: ../media/university-prof-paper-requirements.jpg
 authors:
   - zachshirow

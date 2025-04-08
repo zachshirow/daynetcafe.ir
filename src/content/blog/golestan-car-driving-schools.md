@@ -6,6 +6,9 @@ description: در این پست، لیست کاملی از آموزشگاه ها
 date: 2025-03-02
 tags:
   - وبلاگ
+  - گواهینامه
+  - آموزشگاه
+  - لیست
 image: ../media/golestan-car-driving-schools.jpg
 authors:
   - zachshirow

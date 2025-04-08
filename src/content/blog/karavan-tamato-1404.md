@@ -6,6 +6,9 @@ description: ""
 date: 2025-01-08
 tags:
   - وبلاگ
+  - حج
+  - تمتع
+  - کاروان
 image: ../media/karavan-tamato-1404.jpg
 authors:
   - zachshirow

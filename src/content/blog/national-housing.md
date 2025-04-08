@@ -6,6 +6,7 @@ description: در این مقاله به بررسی دقیق شرایط و جز�
 date: 2025-02-12
 tags:
   - وبلاگ
+  - طرح_حمایتی_دولتی
 image: ../media/national-housing.jpg
 authors:
   - zachshirow

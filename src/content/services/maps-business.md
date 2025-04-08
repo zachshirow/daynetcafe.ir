@@ -5,6 +5,8 @@ description: در کافی نت دی می توانیم کسب و کار شما �
 date: 2025-02-21
 tags:
   - خدمت
+  - کسب_و_کار
+  - اینترنت
 image: ../media/add-business-maps.jpg
 authors:
   - zachshirow

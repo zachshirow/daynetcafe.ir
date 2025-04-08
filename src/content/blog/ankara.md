@@ -7,6 +7,7 @@ description: شهر آنکارا یکی از شهرهای معروف ترکیه 
 date: 2025-02-12
 tags:
   - وبلاگ
+  - ترکیه
 image: ../media/ankara.jpg
 authors:
   - zachshirow

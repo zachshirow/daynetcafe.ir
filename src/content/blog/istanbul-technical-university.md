@@ -6,6 +6,9 @@ description: در این مقاله به معرفی کامل دانشگاه فن
 date: 2025-02-13
 tags:
   - وبلاگ
+  - دانشگاه
+  - ترکیه
+  - دانشگاه_ترکیه
 image: ../media/istanbul-technical-university.jpg
 authors:
   - zachshirow

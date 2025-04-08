@@ -5,6 +5,9 @@ description: در کافی نت دی تمام مراحل ثبت نامدر کن�
 date: 2025-02-24
 tags:
   - خدمت
+  - ثبتنام
+  - کنکور
+  - آزمون
 image: ../media/konkoor-signup.jpg
 authors:
   - zachshirow

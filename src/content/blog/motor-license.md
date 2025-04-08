@@ -7,6 +7,7 @@ date: 2025-02-21
 tags:
   - وبلاگ
   - گواهینامه
+  - موتورسیکلت
 image: ../media/motor-license.jpg
 authors:
   - zachshirow

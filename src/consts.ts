@@ -44,22 +44,23 @@ export const SITE: Site = {
   POSTS_PER_PAGE: 5,
   SITEURL: 'https://daynetcafe.ir',
   SERVICES: 13, 
-  CUSTOMERS: 213, 
-  PROJECTS: 298, 
-  USDRATE: 950000
+  CUSTOMERS: 231, 
+  PROJECTS: 321, 
+  USDRATE: 1050000
 }
 
 export const NAV_LINKS: Link[] = [
   { href: '/blog', label: 'وبلاگ' },
   { href: '/services', label: 'خدمات' },
-  { href: '/shop', label: 'فروشگاه' },
+  { href: '/tags', label: 'تگ ها' },
+  // { href: '/shop', label: 'فروشگاه' },
 ]
 
 export const FOOTER_LINKS: Link[] = [
   {href: "/about", label: "درباره ما"},
   {href: "/blog", label: "وبلاگ"},
   {href: "/services", label: "خدمات"},
-  {href: "/shop", label: "فروشگاه"},
+  // {href: "/shop", label: "فروشگاه"},
   {href: "/tags", label: "تگ ها"},
 ]
 

@@ -6,6 +6,9 @@ description: نوشتن یک مقاله پژوهشی فرآیندی است که 
 date: 2025-02-26
 tags:
   - وبلاگ
+  - پروسه
+  - آموزش
+  - تحقیق
 image: ../media/research-paper-process.jpg
 authors:
   - zachshirow

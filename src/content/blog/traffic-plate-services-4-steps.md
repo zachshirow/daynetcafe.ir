@@ -6,6 +6,7 @@ description: در این مقاله به صورت کامل به بررسی 4 م�
 date: 2025-02-12
 tags:
   - وبلاگ
+  - پلاک
 image: ../media/traffic-plate-services-4-steps.jpg
 authors:
   - zachshirow

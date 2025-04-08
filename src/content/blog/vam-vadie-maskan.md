@@ -6,6 +6,8 @@ description: شرایط، مبلغ، مدارک، مراحل و کلی نکات 
 date: 2025-02-11
 tags:
   - وبلاگ
+  - وام
+  - طرح_حمایتی_دولتی
 image: ../media/vam-vadie-maskan.jpg
 authors:
   - zachshirow

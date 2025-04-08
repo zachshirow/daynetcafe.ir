@@ -6,6 +6,8 @@ description: در این پست به صورت اختصاصی به شرایط ث�
 date: 2025-03-02
 tags:
   - وبلاگ
+  - گواهینامه
+  - موتورسیکلت
 image: ../media/motor-license-gonbad.jpg
 authors:
   - zachshirow

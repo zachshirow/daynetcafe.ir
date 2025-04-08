@@ -6,7 +6,8 @@ description: پیش تر در طرح فروش ثبت نام بهمن موتور 
 date: 2025-02-09
 tags:
   - وبلاگ
-  - ثبتنام-خودرو
+  - ثبتنام_خودرو
+  - بهمن_موتور
 image: ../media/haval-h6-mistake.jpg
 authors:
   - zachshirow

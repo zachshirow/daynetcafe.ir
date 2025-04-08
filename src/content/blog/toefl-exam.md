@@ -7,6 +7,8 @@ description: در این مقاله به معرفی آزمون تافل می پ�
 date: 2025-02-12
 tags:
   - وبلاگ
+  - آزمون
+  - انگلیسی
 image: ../media/toefl-exam.jpg
 authors:
   - zachshirow

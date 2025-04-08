@@ -7,6 +7,9 @@ date: 2025-02-08
 image: ../media/writing-sop.jpg
 tags:
   - وبلاگ
+  - نوشتن
+  - پروسه
+  - آموزش
 authors:
   - zachshirow
   - hemra

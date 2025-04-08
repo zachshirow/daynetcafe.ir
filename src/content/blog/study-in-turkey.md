@@ -5,6 +5,9 @@ description: در این مقاله به تفصیل به جزئیات تحصیل
 date: 2025-02-03
 tags:
   - وبلاگ
+  - ترکیه
+  - تحصیل_در_ترکیه
+  - آموزش
 authors:
   - zachshirow
 image: ../media/study-in-turkey.jpg

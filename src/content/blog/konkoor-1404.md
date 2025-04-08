@@ -6,6 +6,8 @@ description: " در این پست می توانید همه اطلاعات مرب
 date: 2025-02-24
 tags:
   - وبلاگ
+  - ثبتنام
+  - کنکور
 image: ../media/konkoor-1404.jpg
 authors:
   - zachshirow

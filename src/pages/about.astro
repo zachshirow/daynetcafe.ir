@@ -5,6 +5,9 @@ import Link from '@/components/Link.astro'
 import { SITE } from '@/consts'
 import Layout from '@/layouts/Layout.astro'
 import Authors from '@/components/Authors.astro'
+import Image from 'astro/components/Image.astro'
+import daynetcafeOffice from "@/assets/daynetcafe-office.jpg"
+
 // import ProjectCard from '@/components/ProjectCard.astro'
 // import { getCollection } from 'astro:content'
 
@@ -22,6 +25,7 @@ import Authors from '@/components/Authors.astro'
         <div class="prose prose-neutral mb-8 dark:prose-invert max-w-full">
           
           <h1>کافی نت دی</h1>
+          <Image class="rounded-lg" src={daynetcafeOffice} alt={SITE.TITLE} width={1920} height={1080} />
           <div class="lead">
             <p>
               برای انجام کارهای کافی نتی خودتون می تونید روی ما حساب کنید. آنلاین یا حضوری، کافی نت دی در خدمت شماست. دفتر ما واقع در شهرستان گنبد کاووس استان گلستان می باشد. 

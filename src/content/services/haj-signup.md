@@ -8,6 +8,10 @@ description: ما در کافی نت دی کلیه خدمات مربوط به ث
 date: 2025-02-02
 tags:
   - خدمت
+  - ثبتنام
+  - حج
+  - عمره
+  - تمتع
 image: ../media/haj-signup.jpg
 authors:
   - zachshirow

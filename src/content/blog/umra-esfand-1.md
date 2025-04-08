@@ -6,6 +6,9 @@ description: ثبت نام گروه های جدید کاروانهای عمره 
 date: 2025-02-19
 tags:
   - وبلاگ
+  - حج
+  - عمره
+  - کاروان
 image: ../media/umra-esfand-1.jpg
 authors:
   - zachshirow

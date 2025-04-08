@@ -1,13 +1,11 @@
 ---
-postid: {{time}}
 aliases: 
-- 
 description: ""
 date: {{date}}
-tags: 
-- وبلاگ
+tags:
+  - وبلاگ
 image: 
-authors: 
-- zachshirow
-- hemra
+authors:
+  - zachshirow
+  - hemra
 ---

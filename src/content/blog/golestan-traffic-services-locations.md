@@ -6,6 +6,8 @@ description: در این مقاله لیست کاملی از مراکز خدما
 date: 2025-03-02
 tags:
   - وبلاگ
+  - لیست
+  - گواهینامه
 image: ../media/golestan-traffic-services-locations.jpg
 authors:
   - zachshirow

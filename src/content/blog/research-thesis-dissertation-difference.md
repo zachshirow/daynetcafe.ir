@@ -6,6 +6,8 @@ description: در این پست می خواهیم به تفاوت های مقا�
 date: 2025-02-26
 tags:
   - وبلاگ
+  - تفاوت
+  - تحقیق
 image: ../media/research-thesis-dissertation-difference.jpg
 authors:
   - zachshirow

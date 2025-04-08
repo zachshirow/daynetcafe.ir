@@ -6,6 +6,9 @@ date: 2025-02-13
 image: ../media/istanbul-university.jpg
 tags:
   - وبلاگ
+  - دانشگاه
+  - ترکیه
+  - دانشگاه_ترکیه
 authors:
   - zachshirow
   - hemra

@@ -5,6 +5,9 @@ description: در کافی نت دی برایتان در صرافی کی سی ا
 date: 2025-02-24
 tags:
   - خدمت
+  - ثبتنام
+  - صرافی
+  - جایزه
 image: ../media/kcex-signup.jpg
 authors:
   - zachshirow

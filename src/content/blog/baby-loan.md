@@ -6,6 +6,7 @@ description: "در این مقاله به بررسی کامل دریافت وا�
 date: 2025-02-12
 tags:
   - وبلاگ
+  - وام
 image: ../media/baby-loan.jpg
 authors:
   - zachshirow

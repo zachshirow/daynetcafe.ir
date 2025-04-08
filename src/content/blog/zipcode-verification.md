@@ -6,6 +6,9 @@ description: در این مقاله به بررسی فرایند احراز نش
 date: 2025-02-12
 tags:
   - وبلاگ
+  - سخا
+  - پست
+  - پلاک
 image: ../media/zipcode-verification.jpg
 authors:
   - zachshirow

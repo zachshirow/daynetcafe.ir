@@ -5,6 +5,9 @@ description: در کافی نت دی ما می توانیم برایتان نو�
 date: 2025-03-02
 tags:
   - خدمت
+  - نوبت_دهی
+  - ثبتنام
+  - خودرو
 image: ../media/traffic-services-signup.jpg
 authors:
   - zachshirow

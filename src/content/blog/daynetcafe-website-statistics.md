@@ -6,6 +6,8 @@ description: در این مقاله، سیستمی که از آن برای ته�
 date: 2025-02-26
 tags:
   - وبلاگ
+  - کافی_نت_دی
+  - آمار
 image: ../media/daynetcafe-website-analytics.jpg
 authors:
   - zachshirow

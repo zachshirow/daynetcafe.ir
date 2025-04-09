@@ -2,5 +2,8 @@
     "app": "day-static",
     "port": 1234,
     "platform": "static",
+    "build": {
+        "location": "iran"
+    },
     "path": "./dist"
 }

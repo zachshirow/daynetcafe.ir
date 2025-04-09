@@ -34,7 +34,7 @@ https://daygency.ir
 - تعداد پروژه های انجام شده: 321
 
 
-![](../media/daynetcafe-office.jpg)
+![دفتر کافی نت دی - زکریا شیرمحمدلی و همرا شیرمحمدلی](../media/daynetcafe-office.jpg)
 
 ## 01 فروردین 1404
 

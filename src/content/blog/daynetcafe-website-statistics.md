@@ -27,6 +27,6 @@ https://eu.umami.is/share/yzAZ3a03ixLOEfpL/daynetcafe.ir
 
 در مورد ما بیشتر بخوانید: 
 
-- [درباره کافی نت دی](about)
+- [درباره کافی نت دی](/about)
 - [مقاله های کافی نت دی](/blog)
 - [خدمات کافی نت دی](/services)

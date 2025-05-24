@@ -4,49 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "603c8207a4b2f506",
+        "id": "029af3ba667e5c76",
         "type": "tabs",
         "children": [
           {
-            "id": "66cd8bfe3440182a",
+            "id": "d8e76243bb4ff0db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "services/toefl-signup.md",
+                "file": "blog/daynetcafe-changelog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "toefl-signup"
+              "title": "daynetcafe-changelog"
             }
           },
           {
-            "id": "3d5b79ebb1574822",
+            "id": "4113c9ea5a03e3ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/iran-khodro-1404-farvardin25.mdx",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "iran-khodro-1404-farvardin25"
-            }
-          },
-          {
-            "id": "96c93b12cdc45db6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/toefl-signup-tutorial.md",
+                "file": "services/yos-signup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "toefl-signup-tutorial"
+              "title": "yos-signup"
             }
           }
         ],
@@ -82,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "files.",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/toefl-exam.md",
+                "file": "services/yos-signup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for toefl-exam"
+              "title": "Backlinks for yos-signup"
             }
           },
           {
@@ -142,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/golestan-traffic-services-locations.md",
+                "file": "blog/sat-exam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from golestan-traffic-services-locations"
+              "title": "Outgoing links from sat-exam"
             }
           },
           {
@@ -171,17 +157,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/iran-khodro-1404-farvardin25.mdx",
+                "file": "blog/sat-exam.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of iran-khodro-1404-farvardin25"
+              "title": "Outline of sat-exam"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,47 +184,46 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "3d5b79ebb1574822",
+  "active": "4113c9ea5a03e3ef",
   "lastOpenFiles": [
-    "blog/iran-khodro-fajr-1403.mdx",
-    "blog/iran-khodro-1404-farvardin25.mdx",
-    "media/rana-plus.jpg",
-    "media/peugeot-207.jpg",
-    "media/iran-khodro-1404-farvardin25.jpg",
-    "media/soren-xu7p.jpg",
-    "media/tara-automatic.jpg",
-    "media/dena-plus-automatic.jpg",
-    "media/add-business-maps.jpg",
-    "blog/toefl-exam.md",
-    "blog/toefl-signup-tutorial.md",
-    "media/toefl-signup-tutorial.jpg",
-    "services/toefl-signup.md",
-    "blog/toefl-home-edition-equipment-and-prep.md",
+    "blog/daynetcafe-changelog.md",
+    "media/Pasted image 20250524145428.png",
+    "blog/yos-exam-procedure.md",
+    "media/yos-exam-procedure.jpg",
+    "blog/top-4-free-virtual-phone-number-platforms.md",
+    "blog/sat-exam.md",
+    "services/sat-exam-signup-services.md",
+    "blog/sat-exam-procedure-0-100.md",
+    "blog/introducing-daygency.md",
     "services/turkiye-university-signup.md",
+    "media/kcex-signup.jpg",
+    "services/kcex-signup.md",
+    "media/Pasted image 20250224104830.png",
+    "yos-signup.mdx.md",
+    "services/yos-signup.md",
+    "media/sat-exam-procedure-0-100.jpg",
+    "media/sat-exam-exam-card.jpg",
+    "blog/yos-exam.md",
+    "media/yos-exam-exam-card.jpg",
+    "media/top-4-free-virtual-phone-number-platforms.jpg",
+    "media/sat-5-important-notes-before-exam.jpg",
+    "media/sat-exam-signup-services.jpg",
+    "services/motor-license-signup.md",
+    "آزمون اس ای تی.md",
+    "services/toefl-signup.md",
+    "blog/iran-khodro-1404-farvardin25.mdx",
+    "blog/toefl-signup-tutorial.md",
+    "blog/iran-khodro-fajr-1403.mdx",
+    "blog/toefl-exam.md",
+    "blog/toefl-home-edition-equipment-and-prep.md",
     "ثبت نام در آزمون تافل.md",
     "blog/konkoor-1404.md",
     "blog/haj-tamato-1404-karavans-golestan.md",
     "services/haj-signup.md",
     "blog/golestan-haj-karavans.mdx",
-    "media/haj-tamato-1404-karavans-golestan.jpg",
     "blog/daynetcafe-website-statistics.md",
     "blog/internetcafe-gonbad.md",
-    "media/internetcafe-gonbad.jpg",
-    "blog/daynetcafe-changelog.md",
     "blog/daynetcafe-customers-review-process.md",
-    "services/car-signup.md",
-    "services/yos-signup.mdx",
-    "services/translation-services.md",
-    "services/traffic-services-signup.md",
-    "services/print.md",
-    "services/motor-license-signup.md",
-    "services/maps-business.md",
-    "services/konkoor-signup.md",
-    "services/kcex-signup.md",
-    "services/ielts-signup.md",
-    "blog/yos-exam.md",
-    "blog/golestan-motor-driving-schools.md",
-    "blog/golestan-traffic-services-locations.md",
     "blog/turkiye-universities.mdx",
     "blog/umra-latest-news.mdx",
     "blog/golestan-driving-schools.mdx",
